@@ -16,7 +16,7 @@
         <link rel="prev" href="../../redux/persist/reduxtoolkit-and-rtkquery/">
       
       
-        <link rel="next" href="../rtk-query-header/">
+        <link rel="next" href="../query-lifecycle/">
       
       
       <link rel="icon" href="../../../assets/logo/react.ico">
@@ -82,13 +82,18 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -134,7 +139,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -144,7 +149,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -5212,6 +5217,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -5225,6 +5245,150 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rtk-query-two-main-ways-to-call-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 RTK Query - Two Main Ways to Call APIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 RTK Query - Two Main Ways to Call APIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-hook-based-approach-for-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Hook-based approach (for components)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-initiate-based-approach-for-actions-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Initiate-based approach (for actions, functions)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-unwrap-doing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 What's unwrap() doing?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-dispatchunwrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ When to use dispatch(...).unwrap()?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 Example comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-scenario-call-after-login-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Scenario: Call after login success
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Scenario: Call after login success">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-conditionally-call-query-after-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Conditionally call query after login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-imperative-refetch-after-login-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Imperative refetch after login success
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Query Lifecycle
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -5328,6 +5492,121 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../rtk-optimistic-mutation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RTK Optimistic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rtk-lazy-query/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RTK LazyQuery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rtk-query-hooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RTK Query Hooks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-ways-to-call-rtkquery-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5 Ways to Call API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CheatSheet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -5340,10 +5619,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_12" >
         
           
-          <label class="md-nav__link" for="__nav_5_5_6" id="__nav_5_5_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_5_12" id="__nav_5_5_12_label" tabindex="0">
             
   
   
@@ -5356,8 +5635,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5_12">
             <span class="md-nav__icon md-icon"></span>
             Hooks
           </label>
@@ -5504,10 +5783,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_13" >
         
           
-          <label class="md-nav__link" for="__nav_5_5_7" id="__nav_5_5_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_5_13" id="__nav_5_5_13_label" tabindex="0">
             
   
   
@@ -5520,8 +5799,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5_13">
             <span class="md-nav__icon md-icon"></span>
             Official
           </label>
@@ -7799,7 +8078,7 @@
   
   
   <span class="md-ellipsis">
-    Composition
+    MSW
     
   </span>
   
@@ -7809,6 +8088,78 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_8">
+            <span class="md-nav__icon md-icon"></span>
+            MSW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../package/msw/msw-advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_9" id="__nav_8_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Composition
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_9">
             <span class="md-nav__icon md-icon"></span>
             Composition
           </label>
@@ -7886,10 +8237,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_10" >
         
           
-          <label class="md-nav__link" for="__nav_8_9" id="__nav_8_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_10" id="__nav_8_10_label" tabindex="0">
             
   
   
@@ -7902,8 +8253,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_10">
             <span class="md-nav__icon md-icon"></span>
             Monitoring and Logging
           </label>
@@ -7973,10 +8324,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_10_3" >
         
           
-          <label class="md-nav__link" for="__nav_8_9_3" id="__nav_8_9_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_10_3" id="__nav_8_10_3_label" tabindex="0">
             
   
   
@@ -7989,8 +8340,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_9_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_9_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_10_3">
             <span class="md-nav__icon md-icon"></span>
             Pino
           </label>
@@ -8174,6 +8525,118 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rtk-query-two-main-ways-to-call-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 RTK Query - Two Main Ways to Call APIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 RTK Query - Two Main Ways to Call APIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-hook-based-approach-for-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Hook-based approach (for components)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-initiate-based-approach-for-actions-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Initiate-based approach (for actions, functions)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-unwrap-doing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 What's unwrap() doing?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-dispatchunwrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ When to use dispatch(...).unwrap()?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 Example comparison
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-scenario-call-after-login-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Scenario: Call after login success
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Scenario: Call after login success">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-conditionally-call-query-after-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Conditionally call query after login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-imperative-refetch-after-login-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Imperative refetch after login success
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -8189,9 +8652,121 @@
 
 
 
-  <h1>Intro</h1>
+<h1 id="overview">Overview</h1>
+<hr />
+<h2 id="rtk-query-two-main-ways-to-call-apis">🔹 RTK Query - Two Main Ways to Call APIs</h2>
+<h3 id="1-hook-based-approach-for-components">1. Hook-based approach (for components)</h3>
+<!-- ✅ 1. Hook-based approach (for components) -->
 
-<p>intro</p>
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useFetchUserDetailsQuery</span><span class="p">(</span><span class="nx">userId</span><span class="p">);</span>
+</span></code></pre></div>
+<ul>
+<li>✅ Great for React components.</li>
+<li>❌ Can't use it outside of components (e.g., in <code>handleLogin</code>).</li>
+<li>Auto-executes based on arguments.</li>
+</ul>
+<h3 id="2-initiate-based-approach-for-actions-functions">2. Initiate-based approach (for actions, functions)</h3>
+<!-- ### ✅ 2. Initiate-based approach (for actions, functions) -->
+
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">userDetails</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">fetchUserDetails</span><span class="p">(</span><span class="nx">userId</span><span class="p">)).</span><span class="nx">unwrap</span><span class="p">();</span>
+</span></code></pre></div>
+<ul>
+<li>✅ Works <mark>inside async functions</mark>, like your <code>handleLogin</code>.</li>
+<li>✅ Allows you to handle success/failure with try/catch.</li>
+<li>✅ <code>unwrap()</code> turns the result into a normal Promise, so errors throw and are catchable.</li>
+<li>✅ Fully supports chaining multiple API calls.</li>
+<li>✅ Useful for <mark>side-effects</mark>, workflows, etc.</li>
+</ul>
+<hr />
+<h2 id="whats-unwrap-doing">🔍 What's <code>unwrap()</code> doing?</h2>
+<p>RTK Query returns a <strong>Redux action result</strong> by default — not a Promise. That object has <code>meta</code>, <code>payload</code>, etc., not ideal for logic in functions.</p>
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">fetchUserDetails</span><span class="p">(</span><span class="nx">userId</span><span class="p">));</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">// result.payload (on success), result.error (on failure)</span>
+</span></code></pre></div>
+<p>But if you want to use <code>try/catch</code> easily, you use:</p>
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">userDetails</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">fetchUserDetails</span><span class="p">(</span><span class="nx">userId</span><span class="p">)).</span><span class="nx">unwrap</span><span class="p">();</span>
+</span></code></pre></div>
+<ul>
+<li>✅ On success: <code>unwrap()</code> resolves the payload directly.</li>
+<li>❌ On error: it <mark>throws</mark>, and you catch it like a normal error.</li>
+</ul>
+<hr />
+<h2 id="when-to-use-dispatchunwrap">✅ When to use <code>dispatch(...).unwrap()</code>?</h2>
+<p>Perfect for your use case in <code>handleLogin</code>:</p>
+<ul>
+<li>You’ve just logged in.</li>
+<li>You want to fetch more info based on the user (e.g. roles, preferences, etc.).</li>
+<li>You want to handle all logic and errors together.</li>
+</ul>
+<hr />
+<h2 id="example-comparison">🔁 Example comparison</h2>
+<p><strong>Using <code>unwrap()</code>:</strong></p>
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">userDetails</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">fetchUserDetails</span><span class="p">(</span><span class="nx">userId</span><span class="p">)).</span><span class="nx">unwrap</span><span class="p">();</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Fetched user details:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">userDetails</span><span class="p">);</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Failed to fetch user details&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Without <code>unwrap()</code>:</strong></p>
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">fetchUserDetails</span><span class="p">(</span><span class="nx">userId</span><span class="p">));</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">fetchUserDetails</span><span class="p">.</span><span class="nx">fulfilled</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">result</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Data:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">payload</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>Second version is <mark>more verbose</mark>, but works without throwing.</li>
+<li><code>unwrap()</code> is just cleaner for Promises.</li>
+</ul>
+<hr />
+<h2 id="tldr-summary">TL;DR Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><code>dispatch(fetchUserDetails(...)).unwrap()</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Works in async functions</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Error handling via try/catch</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Returns actual data or throws</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Cleaner syntax</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Use in components (hooks)</td>
+<td>❌ No (use the auto-hooks instead)</td>
+</tr>
+</tbody>
+</table>
+<p>Let me know if you want to convert any of your existing RTK endpoints to support this pattern or chain multiple APIs together smoothly!</p>
+<hr />
+<h2 id="common-scenario-call-after-login-success">Common Scenario: Call after login success</h2>
+<!-- ## ✅ Common Scenario: Call after login success -->
+
+<p>Assume you're logging in via a mutation like <code>useLoginMutation</code>. After a successful login (user authenticated and token received), you can then call your <code>useGetPollingPermissionsQuery</code>.</p>
+<h3 id="option-1-conditionally-call-query-after-login">Option 1: Conditionally call query after login</h3>
+<!-- ### ✅ Option 1: Conditionally call query after login -->
+
+<p>You can use the <code>skip</code> option in RTK Query to wait until the user is logged in:</p>
+<h3 id="option-2-imperative-refetch-after-login-success">Option 2: Imperative refetch after login success</h3>
+<!-- ### ✅ Option 2: Imperative refetch after login success -->
+
+<p>If you're triggering login via a mutation and want to fetch manually after success:</p>
+<hr />
 
 
 
@@ -8244,13 +8819,13 @@
         
         
           
-          <a href="../rtk-query-header/" class="md-footer__link md-footer__link--next" aria-label="Next: RTK Query">
+          <a href="../query-lifecycle/" class="md-footer__link md-footer__link--next" aria-label="Next: Query Lifecycle">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                RTK Query
+                Query Lifecycle
               </div>
             </div>
             <div class="md-footer__button md-icon">
