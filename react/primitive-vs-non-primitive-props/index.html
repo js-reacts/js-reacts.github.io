@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://js-reacts.github.io/package/ui/antd/antd-render-func/">
+        <link rel="canonical" href="https://js-reacts.github.io/react/primitive-vs-non-primitive-props/">
       
       
-        <link rel="prev" href="../controlled-components/">
+        <link rel="prev" href="../business-logic/">
       
       
-        <link rel="next" href="../twoTone-color/">
+        <link rel="next" href="../folder-structure/intro/">
       
       
-      <link rel="icon" href="../../../../assets/logo/react.ico">
+      <link rel="icon" href="../../assets/logo/react.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>render function - React Organization</title>
+        <title>Primitive vs Non-Primitive Props - React Organization</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -56,14 +56,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -74,7 +74,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#primitive-vs-non-primitive-props-in-react" class="md-skip">
           Skip to content
         </a>
       
@@ -109,9 +109,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="React Organization" class="md-header__button md-logo" aria-label="React Organization" data-md-component="logo">
+    <a href="../.." title="React Organization" class="md-header__button md-logo" aria-label="React Organization" data-md-component="logo">
       
-  <img src="../../../../assets/logo/react.png" alt="logo">
+  <img src="../../assets/logo/react.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              render function
+              Primitive vs Non-Primitive Props
             
           </span>
         </div>
@@ -223,7 +223,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+        <a href="../../blog/" class="md-tabs__link">
           
   
   
@@ -243,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../tools/overview/" class="md-tabs__link">
+        <a href="../../tools/overview/" class="md-tabs__link">
           
   
   
@@ -259,11 +259,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../react/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../intro/" class="md-tabs__link">
           
   
   
@@ -283,7 +285,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../router/intro/" class="md-tabs__link">
+        <a href="../../router/intro/" class="md-tabs__link">
           
   
   
@@ -303,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../state-management/intro/" class="md-tabs__link">
           
   
   
@@ -323,7 +325,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../hooks/useReducer/" class="md-tabs__link">
+        <a href="../../hooks/useReducer/" class="md-tabs__link">
           
   
   
@@ -343,7 +345,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../pattern/react-pattern-intro/" class="md-tabs__link">
+        <a href="../../pattern/react-pattern-intro/" class="md-tabs__link">
           
   
   
@@ -359,13 +361,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../package/intro/" class="md-tabs__link">
           
   
   
@@ -405,9 +405,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="React Organization" class="md-nav__button md-logo" aria-label="React Organization" data-md-component="logo">
+    <a href="../.." title="React Organization" class="md-nav__button md-logo" aria-label="React Organization" data-md-component="logo">
       
-  <img src="../../../../assets/logo/react.png" alt="logo">
+  <img src="../../assets/logo/react.png" alt="logo">
 
     </a>
     React Organization
@@ -465,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   
@@ -531,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2025/" class="md-nav__link">
+      <a href="../../blog/archive/2025/" class="md-nav__link">
         
   
   
@@ -556,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../blog/archive/2024/" class="md-nav__link">
         
   
   
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/overview/" class="md-nav__link">
+      <a href="../../tools/overview/" class="md-nav__link">
         
   
   
@@ -658,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/barrel/" class="md-nav__link">
+      <a href="../../tools/barrel/" class="md-nav__link">
         
   
   
@@ -681,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/import-structure/" class="md-nav__link">
+      <a href="../../tools/import-structure/" class="md-nav__link">
         
   
   
@@ -704,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/react-ecosystem/" class="md-nav__link">
+      <a href="../../tools/react-ecosystem/" class="md-nav__link">
         
   
   
@@ -727,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/fsm/" class="md-nav__link">
+      <a href="../../tools/fsm/" class="md-nav__link">
         
   
   
@@ -750,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/animations/" class="md-nav__link">
+      <a href="../../tools/animations/" class="md-nav__link">
         
   
   
@@ -773,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/prettier/" class="md-nav__link">
+      <a href="../../tools/prettier/" class="md-nav__link">
         
   
   
@@ -796,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/eslint/intro/" class="md-nav__link">
+      <a href="../../tools/eslint/intro/" class="md-nav__link">
         
   
   
@@ -819,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/husky/intro/" class="md-nav__link">
+      <a href="../../tools/husky/intro/" class="md-nav__link">
         
   
   
@@ -842,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/husky/lint-staged/" class="md-nav__link">
+      <a href="../../tools/husky/lint-staged/" class="md-nav__link">
         
   
   
@@ -865,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/storybook/intro/" class="md-nav__link">
+      <a href="../../tools/storybook/intro/" class="md-nav__link">
         
   
   
@@ -888,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/react-dev-tools/" class="md-nav__link">
+      <a href="../../tools/react-dev-tools/" class="md-nav__link">
         
   
   
@@ -911,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../tools/code-maintenance/" class="md-nav__link">
+      <a href="../../tools/code-maintenance/" class="md-nav__link">
         
   
   
@@ -938,24 +938,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -968,7 +973,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             React
@@ -982,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   
@@ -1005,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/philosophy/" class="md-nav__link">
+      <a href="../philosophy/" class="md-nav__link">
         
   
   
@@ -1028,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/business-logic/" class="md-nav__link">
+      <a href="../business-logic/" class="md-nav__link">
         
   
   
@@ -1048,10 +1053,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../react/primitive-vs-non-primitive-props/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Primitive vs Non-Primitive Props
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1062,6 +1089,188 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usestate-vs-direct-declaration-const-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆚 useState vs Direct Declaration (const user = {})
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🆚 useState vs Direct Declaration (const user = {})">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-usestate-reactive-and-persistent" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 1. useState: Reactive and Persistent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-const-user-name-alice-recreated-every-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ 2. const user = { name: "Alice" }: Recreated Every Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Visual Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-basics-primitive-vs-non-primitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The Basics: Primitive vs Non-Primitive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deep-insight-react-re-renders-and-props-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Deep Insight: React Re-renders and Props Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-subtle-bugperformance-issue-that-few-people-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Subtle Bug/Performance Issue That Few People Understand
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Subtle Bug/Performance Issue That Few People Understand">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hidden-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hidden Cost:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-that-only-seasoned-devs-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution That Only Seasoned Devs Know
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-even-more-subtle-functions-as-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Even More Subtle: Functions as Props
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Insight
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usememo" class="md-nav__link">
+    <span class="md-ellipsis">
+      useMemo
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1115,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/folder-structure/intro/" class="md-nav__link">
+      <a href="../folder-structure/intro/" class="md-nav__link">
         
   
   
@@ -1138,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/folder-structure/react-architecture/" class="md-nav__link">
+      <a href="../folder-structure/react-architecture/" class="md-nav__link">
         
   
   
@@ -1161,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/folder-structure/feature-based-pattern/" class="md-nav__link">
+      <a href="../folder-structure/feature-based-pattern/" class="md-nav__link">
         
   
   
@@ -1233,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/fake-api/intro/" class="md-nav__link">
+      <a href="../fake-api/intro/" class="md-nav__link">
         
   
   
@@ -1256,7 +1465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/fake-api/json-server/" class="md-nav__link">
+      <a href="../fake-api/json-server/" class="md-nav__link">
         
   
   
@@ -1279,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/fake-api/topic/" class="md-nav__link">
+      <a href="../fake-api/topic/" class="md-nav__link">
         
   
   
@@ -1343,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/fake-api/msw/msw/" class="md-nav__link">
+      <a href="../fake-api/msw/msw/" class="md-nav__link">
         
   
   
@@ -1366,7 +1575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/fake-api/msw/msw-version/" class="md-nav__link">
+      <a href="../fake-api/msw/msw-version/" class="md-nav__link">
         
   
   
@@ -1446,7 +1655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/intro/" class="md-nav__link">
+      <a href="../testing/intro/" class="md-nav__link">
         
   
   
@@ -1469,7 +1678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/jest/" class="md-nav__link">
+      <a href="../testing/jest/" class="md-nav__link">
         
   
   
@@ -1492,7 +1701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/cypress/" class="md-nav__link">
+      <a href="../testing/cypress/" class="md-nav__link">
         
   
   
@@ -1515,7 +1724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   
@@ -1579,7 +1788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/codereport/bugs/intro/" class="md-nav__link">
+      <a href="../testing/codereport/bugs/intro/" class="md-nav__link">
         
   
   
@@ -1602,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/codereport/bugs/solution/" class="md-nav__link">
+      <a href="../testing/codereport/bugs/solution/" class="md-nav__link">
         
   
   
@@ -1625,7 +1834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/codereport/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../testing/codereport/bugs/cleanup-function/" class="md-nav__link">
         
   
   
@@ -1648,7 +1857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/codereport/bugs/debouncing/" class="md-nav__link">
+      <a href="../testing/codereport/bugs/debouncing/" class="md-nav__link">
         
   
   
@@ -1671,7 +1880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/testing/codereport/bugs/master-topic/" class="md-nav__link">
+      <a href="../testing/codereport/bugs/master-topic/" class="md-nav__link">
         
   
   
@@ -1751,7 +1960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/optimization/intro/" class="md-nav__link">
+      <a href="../optimization/intro/" class="md-nav__link">
         
   
   
@@ -1774,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/optimization/react-suspense/" class="md-nav__link">
+      <a href="../optimization/react-suspense/" class="md-nav__link">
         
   
   
@@ -1797,7 +2006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/optimization/code-splitting/" class="md-nav__link">
+      <a href="../optimization/code-splitting/" class="md-nav__link">
         
   
   
@@ -1820,7 +2029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/optimization/error-boundaries/" class="md-nav__link">
+      <a href="../optimization/error-boundaries/" class="md-nav__link">
         
   
   
@@ -1843,7 +2052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/optimization/topic/" class="md-nav__link">
+      <a href="../optimization/topic/" class="md-nav__link">
         
   
   
@@ -1915,7 +2124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/passing-props/" class="md-nav__link">
+      <a href="../example/passing-props/" class="md-nav__link">
         
   
   
@@ -1938,7 +2147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../example/lifting-state-up/" class="md-nav__link">
         
   
   
@@ -1961,7 +2170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/prop-drilling/" class="md-nav__link">
+      <a href="../example/prop-drilling/" class="md-nav__link">
         
   
   
@@ -1984,7 +2193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/children-prop/" class="md-nav__link">
+      <a href="../example/children-prop/" class="md-nav__link">
         
   
   
@@ -2007,7 +2216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/component-composition/" class="md-nav__link">
+      <a href="../example/component-composition/" class="md-nav__link">
         
   
   
@@ -2030,7 +2239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/hoc/" class="md-nav__link">
+      <a href="../example/hoc/" class="md-nav__link">
         
   
   
@@ -2053,7 +2262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/render-props/" class="md-nav__link">
+      <a href="../example/render-props/" class="md-nav__link">
         
   
   
@@ -2076,7 +2285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../example/presentational-and-container/" class="md-nav__link">
         
   
   
@@ -2099,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   
@@ -2212,7 +2421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/function-declaration-and-expression/" class="md-nav__link">
+      <a href="../topic/mastering/function-declaration-and-expression/" class="md-nav__link">
         
   
   
@@ -2235,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/explainingothers/" class="md-nav__link">
+      <a href="../topic/mastering/explainingothers/" class="md-nav__link">
         
   
   
@@ -2258,7 +2467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/hooks-mastering-topic/" class="md-nav__link">
+      <a href="../topic/mastering/hooks-mastering-topic/" class="md-nav__link">
         
   
   
@@ -2281,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/component-re-rendering/" class="md-nav__link">
+      <a href="../topic/mastering/component-re-rendering/" class="md-nav__link">
         
   
   
@@ -2304,7 +2513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/one-most-important-in-react/" class="md-nav__link">
+      <a href="../topic/mastering/one-most-important-in-react/" class="md-nav__link">
         
   
   
@@ -2327,7 +2536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/state-immutability/" class="md-nav__link">
+      <a href="../topic/mastering/state-immutability/" class="md-nav__link">
         
   
   
@@ -2350,7 +2559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/shallow-comparison/" class="md-nav__link">
+      <a href="../topic/mastering/shallow-comparison/" class="md-nav__link">
         
   
   
@@ -2373,7 +2582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/batching-react/" class="md-nav__link">
+      <a href="../topic/mastering/batching-react/" class="md-nav__link">
         
   
   
@@ -2396,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/mastering/batching-stale-state/" class="md-nav__link">
+      <a href="../topic/mastering/batching-stale-state/" class="md-nav__link">
         
   
   
@@ -2427,7 +2636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/react-strict-mode/" class="md-nav__link">
+      <a href="../topic/react-strict-mode/" class="md-nav__link">
         
   
   
@@ -2450,7 +2659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/code-for-change/" class="md-nav__link">
+      <a href="../topic/code-for-change/" class="md-nav__link">
         
   
   
@@ -2473,7 +2682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/abort-controller-solved/" class="md-nav__link">
+      <a href="../topic/abort-controller-solved/" class="md-nav__link">
         
   
   
@@ -2496,7 +2705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/cleanup/" class="md-nav__link">
+      <a href="../topic/cleanup/" class="md-nav__link">
         
   
   
@@ -2519,7 +2728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/topic/slides/" class="md-nav__link">
+      <a href="../topic/slides/" class="md-nav__link">
         
   
   
@@ -2550,7 +2759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/react-batching/" class="md-nav__link">
+      <a href="../react-batching/" class="md-nav__link">
         
   
   
@@ -2614,7 +2823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/miscellaneous/namespace-import/" class="md-nav__link">
+      <a href="../miscellaneous/namespace-import/" class="md-nav__link">
         
   
   
@@ -2637,7 +2846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/miscellaneous/handling-side-effects/" class="md-nav__link">
+      <a href="../miscellaneous/handling-side-effects/" class="md-nav__link">
         
   
   
@@ -2660,7 +2869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/miscellaneous/react-depth/" class="md-nav__link">
+      <a href="../miscellaneous/react-depth/" class="md-nav__link">
         
   
   
@@ -2683,7 +2892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../react/miscellaneous/books/" class="md-nav__link">
+      <a href="../miscellaneous/books/" class="md-nav__link">
         
   
   
@@ -2762,7 +2971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/intro/" class="md-nav__link">
+      <a href="../../router/intro/" class="md-nav__link">
         
   
   
@@ -2826,7 +3035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/types/types-of-router/" class="md-nav__link">
+      <a href="../../router/types/types-of-router/" class="md-nav__link">
         
   
   
@@ -2849,7 +3058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/types/types-of-access-control-routes/" class="md-nav__link">
+      <a href="../../router/types/types-of-access-control-routes/" class="md-nav__link">
         
   
   
@@ -2872,7 +3081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/types/private-vs-protected/" class="md-nav__link">
+      <a href="../../router/types/private-vs-protected/" class="md-nav__link">
         
   
   
@@ -2944,7 +3153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/version/v6/" class="md-nav__link">
+      <a href="../../router/version/v6/" class="md-nav__link">
         
   
   
@@ -3016,7 +3225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/docs/router-version/" class="md-nav__link">
+      <a href="../../router/docs/router-version/" class="md-nav__link">
         
   
   
@@ -3039,7 +3248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/docs/react-router/" class="md-nav__link">
+      <a href="../../router/docs/react-router/" class="md-nav__link">
         
   
   
@@ -3062,7 +3271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/docs/why-react-router/" class="md-nav__link">
+      <a href="../../router/docs/why-react-router/" class="md-nav__link">
         
   
   
@@ -3085,7 +3294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/docs/not-found-component/" class="md-nav__link">
+      <a href="../../router/docs/not-found-component/" class="md-nav__link">
         
   
   
@@ -3108,7 +3317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/docs/routing/" class="md-nav__link">
+      <a href="../../router/docs/routing/" class="md-nav__link">
         
   
   
@@ -3131,7 +3340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/docs/best-method-for-auth/" class="md-nav__link">
+      <a href="../../router/docs/best-method-for-auth/" class="md-nav__link">
         
   
   
@@ -3154,7 +3363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/docs/auth-techniques/" class="md-nav__link">
+      <a href="../../router/docs/auth-techniques/" class="md-nav__link">
         
   
   
@@ -3226,7 +3435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/example/simple-login/" class="md-nav__link">
+      <a href="../../router/example/simple-login/" class="md-nav__link">
         
   
   
@@ -3249,7 +3458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/example/context-auth/" class="md-nav__link">
+      <a href="../../router/example/context-auth/" class="md-nav__link">
         
   
   
@@ -3313,7 +3522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/example/antd/intro/" class="md-nav__link">
+      <a href="../../router/example/antd/intro/" class="md-nav__link">
         
   
   
@@ -3336,7 +3545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/example/antd/active-link/" class="md-nav__link">
+      <a href="../../router/example/antd/active-link/" class="md-nav__link">
         
   
   
@@ -3359,7 +3568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/example/antd/key-and-label/" class="md-nav__link">
+      <a href="../../router/example/antd/key-and-label/" class="md-nav__link">
         
   
   
@@ -3439,7 +3648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/question/pervent-layout-flashing-v6/" class="md-nav__link">
+      <a href="../../router/question/pervent-layout-flashing-v6/" class="md-nav__link">
         
   
   
@@ -3470,7 +3679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../router/permission-based-routing/" class="md-nav__link">
+      <a href="../../router/permission-based-routing/" class="md-nav__link">
         
   
   
@@ -3541,7 +3750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/intro/" class="md-nav__link">
+      <a href="../../state-management/intro/" class="md-nav__link">
         
   
   
@@ -3605,7 +3814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/intro/" class="md-nav__link">
         
   
   
@@ -3628,7 +3837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/redux-architecture/" class="md-nav__link">
+      <a href="../../state-management/redux/redux-architecture/" class="md-nav__link">
         
   
   
@@ -3692,7 +3901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/history/overview/" class="md-nav__link">
+      <a href="../../state-management/redux/history/overview/" class="md-nav__link">
         
   
   
@@ -3715,7 +3924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/history/testing-redux/" class="md-nav__link">
+      <a href="../../state-management/redux/history/testing-redux/" class="md-nav__link">
         
   
   
@@ -3787,7 +3996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/folder-structure/" class="md-nav__link">
+      <a href="../../state-management/redux/core/folder-structure/" class="md-nav__link">
         
   
   
@@ -3810,7 +4019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-pattern/" class="md-nav__link">
+      <a href="../../state-management/redux/core/redux-pattern/" class="md-nav__link">
         
   
   
@@ -3833,7 +4042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-testing/" class="md-nav__link">
+      <a href="../../state-management/redux/core/redux-testing/" class="md-nav__link">
         
   
   
@@ -3897,7 +4106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/action/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/core/action/intro/" class="md-nav__link">
         
   
   
@@ -3969,7 +4178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/core/reducer/intro/" class="md-nav__link">
         
   
   
@@ -3992,7 +4201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/example/" class="md-nav__link">
+      <a href="../../state-management/redux/core/reducer/example/" class="md-nav__link">
         
   
   
@@ -4015,7 +4224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
         
   
   
@@ -4038,7 +4247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
         
   
   
@@ -4110,7 +4319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
         
   
   
@@ -4133,7 +4342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   
@@ -4156,7 +4365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   
@@ -4236,7 +4445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   
@@ -4308,7 +4517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   
@@ -4331,7 +4540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/core-vs-query/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/core-vs-query/" class="md-nav__link">
         
   
   
@@ -4395,7 +4604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/intro/" class="md-nav__link">
         
   
   
@@ -4418,7 +4627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/folder-structure/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/folder-structure/" class="md-nav__link">
         
   
   
@@ -4441,7 +4650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/code-modularity/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/code-modularity/" class="md-nav__link">
         
   
   
@@ -4464,7 +4673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/ultimate/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/ultimate/" class="md-nav__link">
         
   
   
@@ -4528,7 +4737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/middleware/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/middleware/intro/" class="md-nav__link">
         
   
   
@@ -4551,7 +4760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/middleware/setup/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/middleware/setup/" class="md-nav__link">
         
   
   
@@ -4623,7 +4832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/example/example/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/example/example/" class="md-nav__link">
         
   
   
@@ -4654,7 +4863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/topic/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/topic/" class="md-nav__link">
         
   
   
@@ -4718,7 +4927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/a.how-to-right-question/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/a.how-to-right-question/" class="md-nav__link">
         
   
   
@@ -4741,7 +4950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/where-do-we-define-action/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/where-do-we-define-action/" class="md-nav__link">
         
   
   
@@ -4764,7 +4973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
         
   
   
@@ -4787,7 +4996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
         
   
   
@@ -4810,7 +5019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
         
   
   
@@ -4833,7 +5042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
         
   
   
@@ -4856,7 +5065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/" class="md-nav__link">
         
   
   
@@ -4879,7 +5088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
         
   
   
@@ -4959,7 +5168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/query/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/query/intro/" class="md-nav__link">
         
   
   
@@ -4982,7 +5191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/query/anatomy-of-rtkquery/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/query/anatomy-of-rtkquery/" class="md-nav__link">
         
   
   
@@ -5005,7 +5214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/query/rtkadvanced/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/query/rtkadvanced/" class="md-nav__link">
         
   
   
@@ -5028,7 +5237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/query/topic/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/query/topic/" class="md-nav__link">
         
   
   
@@ -5051,7 +5260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/query/mnemonic/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/query/mnemonic/" class="md-nav__link">
         
   
   
@@ -5074,7 +5283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/rtk/query/tools/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk/query/tools/" class="md-nav__link">
         
   
   
@@ -5121,7 +5330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/react-redux/" class="md-nav__link">
+      <a href="../../state-management/redux/react-redux/" class="md-nav__link">
         
   
   
@@ -5185,7 +5394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/persist/redux-persist/" class="md-nav__link">
+      <a href="../../state-management/redux/persist/redux-persist/" class="md-nav__link">
         
   
   
@@ -5208,7 +5417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/persist/example/" class="md-nav__link">
+      <a href="../../state-management/redux/persist/example/" class="md-nav__link">
         
   
   
@@ -5231,7 +5440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/persist/question/" class="md-nav__link">
+      <a href="../../state-management/redux/persist/question/" class="md-nav__link">
         
   
   
@@ -5254,7 +5463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/persist/immer-example/" class="md-nav__link">
+      <a href="../../state-management/redux/persist/immer-example/" class="md-nav__link">
         
   
   
@@ -5277,7 +5486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/persist/redux-persist-purge/" class="md-nav__link">
+      <a href="../../state-management/redux/persist/redux-persist-purge/" class="md-nav__link">
         
   
   
@@ -5300,7 +5509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/persist/redux-store-subscribe/" class="md-nav__link">
+      <a href="../../state-management/redux/persist/redux-store-subscribe/" class="md-nav__link">
         
   
   
@@ -5323,7 +5532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/persist/reduxtoolkit-and-rtkquery/" class="md-nav__link">
+      <a href="../../state-management/redux/persist/reduxtoolkit-and-rtkquery/" class="md-nav__link">
         
   
   
@@ -5395,7 +5604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/intro/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/intro/" class="md-nav__link">
         
   
   
@@ -5418,7 +5627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/query-lifecycle/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/query-lifecycle/" class="md-nav__link">
         
   
   
@@ -5441,7 +5650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/rtk-query-header/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/rtk-query-header/" class="md-nav__link">
         
   
   
@@ -5464,7 +5673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/rtk-post-put-mutation/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/rtk-post-put-mutation/" class="md-nav__link">
         
   
   
@@ -5487,7 +5696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/rtk-transform/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/rtk-transform/" class="md-nav__link">
         
   
   
@@ -5510,7 +5719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/rtk-vs-tanstack/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/rtk-vs-tanstack/" class="md-nav__link">
         
   
   
@@ -5533,7 +5742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/rtk-optimistic-mutation/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/rtk-optimistic-mutation/" class="md-nav__link">
         
   
   
@@ -5556,7 +5765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/rtk-lazy-query/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/rtk-lazy-query/" class="md-nav__link">
         
   
   
@@ -5579,7 +5788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/rtk-query-hooks/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/rtk-query-hooks/" class="md-nav__link">
         
   
   
@@ -5602,7 +5811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/5-ways-to-call-rtkquery-api/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/5-ways-to-call-rtkquery-api/" class="md-nav__link">
         
   
   
@@ -5625,7 +5834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/cheatsheet/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/cheatsheet/" class="md-nav__link">
         
   
   
@@ -5689,7 +5898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/hooks/rtk-lifecycle-hooks/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/hooks/rtk-lifecycle-hooks/" class="md-nav__link">
         
   
   
@@ -5712,7 +5921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/hooks/rtk-query-hooks/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/hooks/rtk-query-hooks/" class="md-nav__link">
         
   
   
@@ -5735,7 +5944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/hooks/tanStack-query/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/hooks/tanStack-query/" class="md-nav__link">
         
   
   
@@ -5758,7 +5967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/hooks/rtk-skip-option/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/hooks/rtk-skip-option/" class="md-nav__link">
         
   
   
@@ -5781,7 +5990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/hooks/notification-approach-rtk/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/hooks/notification-approach-rtk/" class="md-nav__link">
         
   
   
@@ -5853,7 +6062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/official-docs/basic/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/official-docs/basic/" class="md-nav__link">
         
   
   
@@ -5876,7 +6085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/official-docs/advanced/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/official-docs/advanced/" class="md-nav__link">
         
   
   
@@ -5907,7 +6116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtkquery/best-approach-rtk/" class="md-nav__link">
+      <a href="../../state-management/rtkquery/best-approach-rtk/" class="md-nav__link">
         
   
   
@@ -5979,7 +6188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../state-management/mobx/intro/" class="md-nav__link">
         
   
   
@@ -6051,7 +6260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../state-management/recoil/intro/" class="md-nav__link">
         
   
   
@@ -6123,7 +6332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/middleware/" class="md-nav__link">
+      <a href="../../state-management/middleware/" class="md-nav__link">
         
   
   
@@ -6195,7 +6404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/webstorage/intro/" class="md-nav__link">
+      <a href="../../state-management/webstorage/intro/" class="md-nav__link">
         
   
   
@@ -6218,7 +6427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/webstorage/token/" class="md-nav__link">
+      <a href="../../state-management/webstorage/token/" class="md-nav__link">
         
   
   
@@ -6249,7 +6458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux-persist-local-or-session/" class="md-nav__link">
+      <a href="../../state-management/redux-persist-local-or-session/" class="md-nav__link">
         
   
   
@@ -6272,7 +6481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/jwt-verification-clientside/" class="md-nav__link">
+      <a href="../../state-management/jwt-verification-clientside/" class="md-nav__link">
         
   
   
@@ -6343,7 +6552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useReducer/" class="md-nav__link">
+      <a href="../../hooks/useReducer/" class="md-nav__link">
         
   
   
@@ -6366,7 +6575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useReducer-and-reducer/" class="md-nav__link">
+      <a href="../../hooks/useReducer-and-reducer/" class="md-nav__link">
         
   
   
@@ -6389,7 +6598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useReducer-example/" class="md-nav__link">
+      <a href="../../hooks/useReducer-example/" class="md-nav__link">
         
   
   
@@ -6412,7 +6621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useReducer-with-api/" class="md-nav__link">
+      <a href="../../hooks/useReducer-with-api/" class="md-nav__link">
         
   
   
@@ -6435,7 +6644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/React.memo/" class="md-nav__link">
+      <a href="../../hooks/React.memo/" class="md-nav__link">
         
   
   
@@ -6458,7 +6667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/React.memo-syntax/" class="md-nav__link">
+      <a href="../../hooks/React.memo-syntax/" class="md-nav__link">
         
   
   
@@ -6481,7 +6690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/React.memo-vs-useMemo/" class="md-nav__link">
+      <a href="../../hooks/React.memo-vs-useMemo/" class="md-nav__link">
         
   
   
@@ -6545,7 +6754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/memo/overview/" class="md-nav__link">
+      <a href="../../hooks/memo/overview/" class="md-nav__link">
         
   
   
@@ -6576,7 +6785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/guides/" class="md-nav__link">
+      <a href="../../hooks/guides/" class="md-nav__link">
         
   
   
@@ -6599,7 +6808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useEffect-technique/" class="md-nav__link">
+      <a href="../../hooks/useEffect-technique/" class="md-nav__link">
         
   
   
@@ -6622,7 +6831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../hooks/useEffect-technique-used/" class="md-nav__link">
         
   
   
@@ -6645,7 +6854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../hooks/useEffect-cleanup/" class="md-nav__link">
         
   
   
@@ -6668,7 +6877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useCallback/" class="md-nav__link">
+      <a href="../../hooks/useCallback/" class="md-nav__link">
         
   
   
@@ -6691,7 +6900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/useRef/" class="md-nav__link">
+      <a href="../../hooks/useRef/" class="md-nav__link">
         
   
   
@@ -6714,7 +6923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/react-context-api/" class="md-nav__link">
+      <a href="../../hooks/react-context-api/" class="md-nav__link">
         
   
   
@@ -6737,7 +6946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/react-router/" class="md-nav__link">
+      <a href="../../hooks/react-router/" class="md-nav__link">
         
   
   
@@ -6760,7 +6969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../hooks/migrating-cra-vite/" class="md-nav__link">
         
   
   
@@ -6824,7 +7033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../hooks/custom/overview/" class="md-nav__link">
+      <a href="../../hooks/custom/overview/" class="md-nav__link">
         
   
   
@@ -6903,7 +7112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../pattern/react-pattern-intro/" class="md-nav__link">
         
   
   
@@ -6926,7 +7135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../pattern/compound-pattern/" class="md-nav__link">
         
   
   
@@ -6949,7 +7158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../pattern/hoc-pattern/" class="md-nav__link">
         
   
   
@@ -6972,7 +7181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pattern/function-as-child/" class="md-nav__link">
+      <a href="../../pattern/function-as-child/" class="md-nav__link">
         
   
   
@@ -6995,7 +7204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   
@@ -7018,7 +7227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pattern/antipattern/" class="md-nav__link">
+      <a href="../../pattern/antipattern/" class="md-nav__link">
         
   
   
@@ -7041,7 +7250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pattern/misc/" class="md-nav__link">
+      <a href="../../pattern/misc/" class="md-nav__link">
         
   
   
@@ -7068,29 +7277,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -7103,7 +7307,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Package
@@ -7117,7 +7321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../intro/" class="md-nav__link">
+      <a href="../../package/intro/" class="md-nav__link">
         
   
   
@@ -7181,7 +7385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/overview/" class="md-nav__link">
+      <a href="../../package/state-management/overview/" class="md-nav__link">
         
   
   
@@ -7204,7 +7408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-toolkit/" class="md-nav__link">
+      <a href="../../package/state-management/redux-toolkit/" class="md-nav__link">
         
   
   
@@ -7227,7 +7431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-persist/" class="md-nav__link">
+      <a href="../../package/state-management/redux-persist/" class="md-nav__link">
         
   
   
@@ -7250,7 +7454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-state-sync/" class="md-nav__link">
+      <a href="../../package/state-management/redux-state-sync/" class="md-nav__link">
         
   
   
@@ -7278,8 +7482,6 @@
                 
   
   
-    
-  
   
   
     
@@ -7290,11 +7492,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
         
           
           <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
@@ -7310,7 +7512,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_3">
             <span class="md-nav__icon md-icon"></span>
             UI Library
@@ -7321,8 +7523,6 @@
                 
   
   
-    
-  
   
   
     
@@ -7333,11 +7533,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_1" >
         
           
           <label class="md-nav__link" for="__nav_8_3_1" id="__nav_8_3_1_label" tabindex="0">
@@ -7353,7 +7553,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_3_1">
             <span class="md-nav__icon md-icon"></span>
             Antd
@@ -7367,7 +7567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../package/ui/antd/" class="md-nav__link">
         
   
   
@@ -7390,7 +7590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../topic/" class="md-nav__link">
+      <a href="../../package/ui/antd/topic/" class="md-nav__link">
         
   
   
@@ -7413,7 +7613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../controlled-components/" class="md-nav__link">
+      <a href="../../package/ui/antd/controlled-components/" class="md-nav__link">
         
   
   
@@ -7433,30 +7633,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    render function
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../package/ui/antd/antd-render-func/" class="md-nav__link">
         
   
   
@@ -7467,69 +7647,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-the-use-_-of-render-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the use _ of render function
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-order-in-render-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter Order in render Function
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-happens-if-we-only-use-record" class="md-nav__link">
-    <span class="md-ellipsis">
-      What happens if we only use record
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ignored-parameter" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ignored Parameter
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -7542,7 +7659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twoTone-color/" class="md-nav__link">
+      <a href="../../package/ui/antd/twoTone-color/" class="md-nav__link">
         
   
   
@@ -7565,7 +7682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../antd-configprovider/" class="md-nav__link">
+      <a href="../../package/ui/antd/antd-configprovider/" class="md-nav__link">
         
   
   
@@ -7588,7 +7705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../antd-autofill-input-issue/" class="md-nav__link">
+      <a href="../../package/ui/antd/antd-autofill-input-issue/" class="md-nav__link">
         
   
   
@@ -7611,7 +7728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../antd-breakpoint/" class="md-nav__link">
+      <a href="../../package/ui/antd/antd-breakpoint/" class="md-nav__link">
         
   
   
@@ -7634,7 +7751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../antd-tree/" class="md-nav__link">
+      <a href="../../package/ui/antd/antd-tree/" class="md-nav__link">
         
   
   
@@ -7657,7 +7774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dayjs/" class="md-nav__link">
+      <a href="../../package/ui/antd/dayjs/" class="md-nav__link">
         
   
   
@@ -7721,7 +7838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sidebar/intro/" class="md-nav__link">
+      <a href="../../package/ui/antd/sidebar/intro/" class="md-nav__link">
         
   
   
@@ -7793,7 +7910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/intro/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/intro/" class="md-nav__link">
         
   
   
@@ -7816,7 +7933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/antd-form-methods/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/antd-form-methods/" class="md-nav__link">
         
   
   
@@ -7839,7 +7956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/form-crud/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/form-crud/" class="md-nav__link">
         
   
   
@@ -7862,7 +7979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/onValuesChange/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/onValuesChange/" class="md-nav__link">
         
   
   
@@ -7885,7 +8002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/antd-form-synchronus/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/antd-form-synchronus/" class="md-nav__link">
         
   
   
@@ -7908,7 +8025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/hooks/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/hooks/" class="md-nav__link">
         
   
   
@@ -7931,7 +8048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/antd-useWatch/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/antd-useWatch/" class="md-nav__link">
         
   
   
@@ -7954,7 +8071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/shouldUpdate/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/shouldUpdate/" class="md-nav__link">
         
   
   
@@ -7977,7 +8094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/shouldUpdate-vs-useEffect/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/shouldUpdate-vs-useEffect/" class="md-nav__link">
         
   
   
@@ -8000,7 +8117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/form-useEffect-issue/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/form-useEffect-issue/" class="md-nav__link">
         
   
   
@@ -8023,7 +8140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../form/advanced-form-topic/" class="md-nav__link">
+      <a href="../../package/ui/antd/form/advanced-form-topic/" class="md-nav__link">
         
   
   
@@ -8095,7 +8212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../table/filters/" class="md-nav__link">
+      <a href="../../package/ui/antd/table/filters/" class="md-nav__link">
         
   
   
@@ -8126,7 +8243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../why-antd5-removed-moment/" class="md-nav__link">
+      <a href="../../package/ui/antd/why-antd5-removed-moment/" class="md-nav__link">
         
   
   
@@ -8206,7 +8323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/uuid-package/" class="md-nav__link">
+      <a href="../../package/utility/uuid-package/" class="md-nav__link">
         
   
   
@@ -8229,7 +8346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/jwt/" class="md-nav__link">
+      <a href="../../package/utility/jwt/" class="md-nav__link">
         
   
   
@@ -8293,7 +8410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/lodash/debounce/" class="md-nav__link">
+      <a href="../../package/utility/lodash/debounce/" class="md-nav__link">
         
   
   
@@ -8365,7 +8482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/axios/intro/" class="md-nav__link">
+      <a href="../../package/utility/axios/intro/" class="md-nav__link">
         
   
   
@@ -8388,7 +8505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/axios/topic/" class="md-nav__link">
+      <a href="../../package/utility/axios/topic/" class="md-nav__link">
         
   
   
@@ -8411,7 +8528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/axios/sentry/" class="md-nav__link">
+      <a href="../../package/utility/axios/sentry/" class="md-nav__link">
         
   
   
@@ -8434,7 +8551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/axios/axios-interceptors/" class="md-nav__link">
+      <a href="../../package/utility/axios/axios-interceptors/" class="md-nav__link">
         
   
   
@@ -8506,7 +8623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/pdf/overview/" class="md-nav__link">
+      <a href="../../package/utility/pdf/overview/" class="md-nav__link">
         
   
   
@@ -8578,7 +8695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../package/utility/tinymce/tinymce/" class="md-nav__link">
         
   
   
@@ -8650,7 +8767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/draft-js/overview/" class="md-nav__link">
+      <a href="../../package/utility/draft-js/overview/" class="md-nav__link">
         
   
   
@@ -8722,7 +8839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/react-infinite-scroll-component/" class="md-nav__link">
+      <a href="../../package/utility/react-infinite-scroll-component/" class="md-nav__link">
         
   
   
@@ -8745,7 +8862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utility/react-infinite-scroll-component/resuable/" class="md-nav__link">
+      <a href="../../package/utility/react-infinite-scroll-component/resuable/" class="md-nav__link">
         
   
   
@@ -8866,7 +8983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/msw/overview/" class="md-nav__link">
+      <a href="../../package/testing/msw/overview/" class="md-nav__link">
         
   
   
@@ -8889,7 +9006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/msw/msw-advanced/" class="md-nav__link">
+      <a href="../../package/testing/msw/msw-advanced/" class="md-nav__link">
         
   
   
@@ -9010,7 +9127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../animation/framer-motion/overview/" class="md-nav__link">
+      <a href="../../package/animation/framer-motion/overview/" class="md-nav__link">
         
   
   
@@ -9082,7 +9199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../animation/react-transition-group/overview/" class="md-nav__link">
+      <a href="../../package/animation/react-transition-group/overview/" class="md-nav__link">
         
   
   
@@ -9162,7 +9279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../i18n/i18n/" class="md-nav__link">
+      <a href="../../package/i18n/i18n/" class="md-nav__link">
         
   
   
@@ -9226,7 +9343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../i18n/react-i18next/overview/" class="md-nav__link">
+      <a href="../../package/i18n/react-i18next/overview/" class="md-nav__link">
         
   
   
@@ -9306,7 +9423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/intro/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/intro/" class="md-nav__link">
         
   
   
@@ -9329,7 +9446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/logging-libraries/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/logging-libraries/" class="md-nav__link">
         
   
   
@@ -9393,7 +9510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/pino/intro/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/pino/intro/" class="md-nav__link">
         
   
   
@@ -9416,7 +9533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/pino/send-to-api/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/pino/send-to-api/" class="md-nav__link">
         
   
   
@@ -9439,7 +9556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/pino/example/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/pino/example/" class="md-nav__link">
         
   
   
@@ -9462,7 +9579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/pino/simple-usage/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/pino/simple-usage/" class="md-nav__link">
         
   
   
@@ -9485,7 +9602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/pino/methods/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/pino/methods/" class="md-nav__link">
         
   
   
@@ -9508,7 +9625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../monitoring-and-logging/pino/notes/" class="md-nav__link">
+      <a href="../../package/monitoring-and-logging/pino/notes/" class="md-nav__link">
         
   
   
@@ -9629,7 +9746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/react-idle-timer/overview/" class="md-nav__link">
+      <a href="../../package/miscellaneous/react-idle-timer/overview/" class="md-nav__link">
         
   
   
@@ -9652,7 +9769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/react-idle-timer/usage/" class="md-nav__link">
+      <a href="../../package/miscellaneous/react-idle-timer/usage/" class="md-nav__link">
         
   
   
@@ -9675,7 +9792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/react-idle-timer/issue/" class="md-nav__link">
+      <a href="../../package/miscellaneous/react-idle-timer/issue/" class="md-nav__link">
         
   
   
@@ -9706,7 +9823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/react-image-gallery/" class="md-nav__link">
+      <a href="../../package/miscellaneous/react-image-gallery/" class="md-nav__link">
         
   
   
@@ -9770,7 +9887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/composition/intro/" class="md-nav__link">
+      <a href="../../package/miscellaneous/composition/intro/" class="md-nav__link">
         
   
   
@@ -9793,7 +9910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/composition/imagegallery/" class="md-nav__link">
+      <a href="../../package/miscellaneous/composition/imagegallery/" class="md-nav__link">
         
   
   
@@ -9849,6 +9966,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -9857,45 +9976,162 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#usestate-vs-direct-declaration-const-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      🆚 useState vs Direct Declaration (const user = {})
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🆚 useState vs Direct Declaration (const user = {})">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-usestate-reactive-and-persistent" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 1. useState: Reactive and Persistent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-const-user-name-alice-recreated-every-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ 2. const user = { name: "Alice" }: Recreated Every Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Visual Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-is-the-use-_-of-render-function" class="md-nav__link">
+  <a href="#theory" class="md-nav__link">
     <span class="md-ellipsis">
-      What is the use _ of render function
+      Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-basics-primitive-vs-non-primitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The Basics: Primitive vs Non-Primitive
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-order-in-render-function" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-deep-insight-react-re-renders-and-props-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameter Order in render Function
+      2. Deep Insight: React Re-renders and Props Comparison
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#what-happens-if-we-only-use-record" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-subtle-bugperformance-issue-that-few-people-understand" class="md-nav__link">
     <span class="md-ellipsis">
-      What happens if we only use record
+      3. Subtle Bug/Performance Issue That Few People Understand
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Subtle Bug/Performance Issue That Few People Understand">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hidden-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hidden Cost:
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-that-only-seasoned-devs-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution That Only Seasoned Devs Know
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-even-more-subtle-functions-as-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Even More Subtle: Functions as Props
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Insight
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#ignored-parameter" class="md-nav__link">
+  <a href="#usememo" class="md-nav__link">
     <span class="md-ellipsis">
-      Ignored Parameter
+      useMemo
     </span>
   </a>
   
@@ -9917,334 +10153,362 @@
 
 
 
-  <h1>render function</h1>
-
-<div><h2 id="overview">Overview</h2>
-<p>In Ant Design (antd), the <code>render</code> function in table columns is crucial for customizing how data is displayed in each cell. Here’s a breakdown of what the <code>render</code> function does and the implications of not using it.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">What the <code>render</code> Function Does</label><label for="__tabbed_1_2">What Happens If You Don’t Use It</label></div>
+<div><h1 id="primitive-vs-non-primitive-props-in-react">Primitive vs Non-Primitive Props in React</h1>
+<div class="admonition note">
+<p class="admonition-title">In React, <code>props</code> <strong>are compared by reference</strong>, not by value.</p>
+</div>
+<p>React uses <mark>shallow comparison</mark> (i.e., ===) to detect changes in <code>props</code>. This matters when deciding <strong>whether to re-render a component</strong>—especially if it’s wrapped with <code>React.memo</code>.</p>
+<details class="tip" open="open">
+<summary>🎯 Why This Matters</summary>
+<p>🔹 <strong>React.memo</strong> uses <mark>shallow comparison</mark>; new object/function references prevent optimization.
+✔️ <strong>useMemo</strong> ensures objects &amp; arrays remain referentially stable unless dependencies change.
+✔️ <strong>useCallback</strong> ensures functions remain the same reference unless needed.</p>
+</details>
+<p>Understanding primitive vs non-primitive types is essential to predict, control, and optimize component rendering in React. Without it, you'll either suffer performance issues — or misuse optimization tools.</p>
+<hr>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">App.js</label><label for="__tabbed_1_2">PrimitiveChild.js</label><label for="__tabbed_1_3">NonPrimitiveChild.js</label><label for="__tabbed_1_4">MemoizedNonPrimitiveChild.js</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<ol>
-<li>
-<p><strong>Custom Display</strong>: The <code>render</code> function allows you to define how the cell content is rendered. You can return simple text, formatted HTML, or even React components.</p>
-</li>
-<li>
-<p><strong>Access to Data</strong>: The function provides access to predefined parameters, such as:</p>
-<ul>
-<li><code>text</code>: The value of the current cell.</li>
-<li><code>record</code>: The entire row data.</li>
-<li><code>index</code>: The row index.</li>
-<li><code>column</code>: The column configuration.</li>
-</ul>
-</li>
-<li>
-<p><strong>Conditional Formatting</strong>: You can implement conditional logic to change styles or display different content based on the data.</p>
-</li>
-<li>
-<p><strong>Interactive Elements</strong>: It allows you to include interactive components (like buttons or links) in the cells.</p>
-</li>
-</ol>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// App.js</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useMemo</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">PrimitiveChild</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./PrimitiveChild"</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">import</span><span class="w"> </span><span class="nx">NonPrimitiveChild</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./NonPrimitiveChild"</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">import</span><span class="w"> </span><span class="nx">MemoizedNonPrimitiveChild</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./MemoizedNonPrimitiveChild"</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="c1">// Primitive value (same every render)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="c1">// Non-primitive (new object each time)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="c1">// Memoized non-primitive (same reference every time)</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">memoizedUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useMemo</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">}),</span><span class="w"> </span><span class="p">[]);</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">React</span><span class="w"> </span><span class="nx">Render</span><span class="w"> </span><span class="nx">Behavior</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Re</span><span class="o">-</span><span class="nx">render</span><span class="w"> </span><span class="nx">App</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">Primitive</span><span class="w"> </span><span class="nx">Prop</span><span class="o">&lt;</span><span class="err">/h2&gt;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">PrimitiveChild</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="p">{</span><span class="nx">name</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">Non</span><span class="o">-</span><span class="nx">Primitive</span><span class="w"> </span><span class="nx">Prop</span><span class="o">&lt;</span><span class="err">/h2&gt;</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">NonPrimitiveChild</span><span class="w"> </span><span class="nx">user</span><span class="o">=</span><span class="p">{</span><span class="nx">user</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">Memoized</span><span class="w"> </span><span class="nx">Non</span><span class="o">-</span><span class="nx">Primitive</span><span class="w"> </span><span class="nx">Prop</span><span class="o">&lt;</span><span class="err">/h2&gt;</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">MemoizedNonPrimitiveChild</span><span class="w"> </span><span class="nx">user</span><span class="o">=</span><span class="p">{</span><span class="nx">memoizedUser</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="p">}</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
+</span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<ol>
-<li>
-<p><strong>Default Rendering</strong>: If you do not define a <code>render</code> function for a column, the table will use the default rendering behavior, which simply displays the value specified by the <code>dataIndex</code> of that column.</p>
-</li>
-<li>
-<p><strong>Limited Customization</strong>: You won’t be able to apply any custom formatting or conditional rendering. For example, you can't change the text color based on a condition or render a button.</p>
-</li>
-<li>
-<p><strong>Static Content</strong>: The content will be static and only reflect the data from the data source without any interactivity or enhancements.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<p><strong>Example Comparison</strong></p>
-<ul>
-<li><strong>Using <code>render</code></strong></li>
-</ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">'Age'</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nx">dataIndex</span><span class="o">:</span><span class="w"> </span><span class="s1">'age'</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">span</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">40</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">'red'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">'black'</span><span class="w"> </span><span class="p">}}&gt;{</span><span class="nx">text</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">),</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// PrimitiveChild.js</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">PrimitiveChild</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">memo</span><span class="p">(({</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"👉 PrimitiveChild rendered"</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">Name</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">name</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">});</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">PrimitiveChild</span><span class="p">;</span>
 </span></code></pre></div>
-<ul>
-<li>
-<p>Outcome: The age will be displayed in red if greater than 40.</p>
-</li>
-<li>
-<p><strong>Not Using <code>render</code></strong></p>
-</li>
-</ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">'Age'</span><span class="p">,</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nx">dataIndex</span><span class="o">:</span><span class="w"> </span><span class="s1">'age'</span><span class="p">,</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+</div>
+<div class="tabbed-block">
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// NonPrimitiveChild.js</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">NonPrimitiveChild</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">memo</span><span class="p">(({</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"❌ NonPrimitiveChild rendered"</span><span class="p">);</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">User</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">user</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">});</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">NonPrimitiveChild</span><span class="p">;</span>
 </span></code></pre></div>
-<ul>
-<li>Outcome: The age will simply be displayed as-is without any custom styling or logic.</li>
-</ul>
-<p><strong>Summary</strong></p>
-<p>Using the <code>render</code> function in antd tables is essential for customizing how data is presented and interacted with. Not using it limits the table's flexibility and functionality, resulting in a more static and less engaging user experience. If you have further questions or need more examples, feel free to ask!</p>
+</div>
+<div class="tabbed-block">
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// MemoizedNonPrimitiveChild.js</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">MemoizedNonPrimitiveChild</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">memo</span><span class="p">(({</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"✅ MemoizedNonPrimitiveChild rendered"</span><span class="p">);</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">User</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">user</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">});</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">MemoizedNonPrimitiveChild</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
 <hr>
-<h2 id="what-is-the-use-_-of-render-function">What is the use <code>_</code> of render function</h2>
-<p>In Ant Design (antd) and in JavaScript in general, the underscore (<code>_</code>) can be used in several contexts, especially in function parameters. Here’s a breakdown of its typical usage and when to use it:</p>
-<p><strong>Common Uses of <code>_</code> in Ant Design</strong></p>
-<ol>
-<li>
-<p><strong>Ignoring Parameters</strong>:</p>
-<ul>
-<li>
-<p>If a function receives more parameters than it actually uses, you can use <code>_</code> to indicate that you are intentionally ignoring those parameters. This is common in the render function of table columns, where you might not need all available parameters.</p>
-</li>
-<li>
-<p>Example:</p>
-</li>
-</ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">record</span><span class="p">,</span><span class="w"> </span><span class="nx">_</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">text</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span><span class="w"> </span><span class="c1">// Ignoring the third parameter</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">};</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>Placeholder for Unused Values</strong>:</p>
-<ul>
-<li>
-<p>Similar to ignoring parameters, <code>_</code> can act as a placeholder to clarify that certain parameters are not needed, making the code more readable.</p>
-</li>
-<li>
-<p>Example:</p>
-</li>
-</ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="p">{</span><span class="nx">index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">text</span><span class="p">}</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">);</span><span class="w"> </span><span class="c1">// Using only `text` and `index`</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">};</span>
-</span></code></pre></div>
-</li>
-</ol>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">When to Use <code>_</code></label><label for="__tabbed_2_2">When Not to Use <code>_</code></label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><strong>Readability</strong>: Use <code>_</code> when it improves the readability of your code by making it clear which parameters are not utilized.</li>
-<li><strong>Indicating Intent</strong>: If you want to show that a parameter is intentionally ignored (e.g., to prevent warnings about unused parameters), use <code>_</code>.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><strong>Meaningful Parameters</strong>: If a parameter is meaningful and could be useful later, don’t ignore it. Instead, use descriptive names or utilize the parameter in your logic.</li>
-<li><strong>Confusion</strong>: Avoid using <code>_</code> if it may cause confusion. For instance, if the context of the parameters isn’t clear, it’s better to use more descriptive variable names.</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Example in an Ant Design Table</strong></p>
-<p>Here's how you might see <code>_</code> used in a typical antd table render function:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">"Name"</span><span class="p">,</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nx">dataIndex</span><span class="o">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">record</span><span class="p">,</span><span class="w"> </span><span class="nx">_</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">        </span><span class="p">{</span><span class="nx">text</span><span class="p">}</span><span class="w"> </span><span class="p">(</span><span class="nx">ID</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">record</span><span class="p">.</span><span class="nx">key</span><span class="p">})</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="p">),</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="p">{</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">"Age"</span><span class="p">,</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="nx">dataIndex</span><span class="o">:</span><span class="w"> </span><span class="s2">"age"</span><span class="p">,</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">record</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">record</span><span class="p">.</span><span class="nx">age</span><span class="p">}</span><span class="w"> </span><span class="nx">years</span><span class="w"> </span><span class="nx">old</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;,</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">];</span>
-</span></code></pre></div>
-<p><strong>Summary</strong></p>
-<p>Using <code>_</code> is a helpful convention to improve code clarity and manage unused parameters in your functions. Use it when you want to indicate that certain parameters are intentionally ignored or unnecessary, but avoid it if it could lead to confusion or if you might need the parameter later. If you have any more questions or need further clarification, feel free to ask!</p>
+<h2 id="usestate-vs-direct-declaration-const-user">🆚 <code>useState</code> vs Direct Declaration (<code>const user = {}</code>)</h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th><code>const [user, setUser] = useState({ name: "Alice" })</code></th>
+<th><code>const user = { name: "Alice" }</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ <strong>Persistence</strong></td>
+<td>Persists between re-renders</td>
+<td>New object created on every render</td>
+</tr>
+<tr>
+<td>🔁 <strong>Reference</strong></td>
+<td>Same reference unless <code>setUser()</code> is called</td>
+<td>New reference every time</td>
+</tr>
+<tr>
+<td>🔄 <strong>Triggers Re-renders</strong></td>
+<td>Yes, when calling <code>setUser(newUser)</code></td>
+<td>No mechanism to trigger update</td>
+</tr>
+<tr>
+<td>🎯 <strong>Usage</strong></td>
+<td>For reactive state that may change</td>
+<td>For static or one-time values</td>
+</tr>
+<tr>
+<td>🧠 <strong>Memoization</strong></td>
+<td>Not required (reference is stable)</td>
+<td>Required if used in <code>React.memo</code> component</td>
+</tr>
+<tr>
+<td>♻️ <strong>Re-renders Child</strong> (React.memo)</td>
+<td>❌ No, unless state updates</td>
+<td>✅ Yes, on every parent render</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h2 id="parameter-order-in-render-function">Parameter Order in <code>render</code> Function</h2>
-<p>In Ant Design (antd), the render function for table columns typically accepts parameters in a specific order. Understanding this order is crucial for utilizing the data effectively. Here's the standard parameter order and what each parameter represents:</p>
-<p><strong>Standard Parameter Order in render Function</strong></p>
-<ul>
-<li><code>text</code>: The content of the cell, usually the value from the data source corresponding to the <code>dataIndex</code>.</li>
-<li><code>record</code>: The entire row data for the current row.</li>
-<li><code>index</code> (optional): The index of the current row in the data source.</li>
-<li><code>column</code> (optional): The column configuration object.</li>
-</ul>
-<p><strong>Example</strong></p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">'Name'</span><span class="p">,</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nx">dataIndex</span><span class="o">:</span><span class="w"> </span><span class="s1">'name'</span><span class="p">,</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">record</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">column</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">text</span><span class="p">}</span><span class="w"> </span><span class="p">(</span><span class="nx">Row</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">})&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+<h3 id="1-usestate-reactive-and-persistent">✅ 1. <code>useState</code>: Reactive and Persistent</h3>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">user</span><span class="p">,</span><span class="w"> </span><span class="nx">setUser</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">});</span>
 </span></code></pre></div>
+<ul>
+<li><strong>React stores this object internally</strong>.</li>
+<li><mark>On re-render</mark>, <code>user</code> still points to the <mark>same object</mark> (unless <code>setUser()</code> is called).</li>
+<li>Perfect for props you plan to <strong>change dynamically</strong>.</li>
+<li>Ideal for passing into <code>React.memo</code> components.</li>
+</ul>
+<div class="language-jsx highlight"><span class="filename">Exanple</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setUser</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Bob"</span><span class="w"> </span><span class="p">})}&gt;</span><span class="nx">Change</span><span class="w"> </span><span class="nx">User</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<hr>
+<h3 id="2-const-user-name-alice-recreated-every-time">❌ 2. <code>const user = { name: "Alice" }</code>: Recreated Every Time</h3>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">};</span>
+</span></code></pre></div>
+<ul>
+<li>It's just a <strong>regular local variable</strong>.</li>
+<li>Every time the component renders, a <strong>new object is created</strong>.</li>
+<li>Even if the contents are the same, its <strong>memory reference is different.</strong></li>
+<li>This can cause <strong>unnecessary re-renders</strong> when passed as props.</li>
+</ul>
+<hr>
+<h3 id="visual-example">🧠 Visual Example</h3>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Parent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">user1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">};</span><span class="w"> </span><span class="c1">// ❌ new on each render</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">user2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">});</span><span class="w"> </span><span class="c1">// ✅ same across renders</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="p">&lt;&gt;</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">)}&gt;</span><span class="nx">Re</span><span class="o">-</span><span class="nx">render</span><span class="w"> </span><span class="nx">Parent</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">Child</span><span class="w"> </span><span class="na">user</span><span class="o">=</span><span class="p">{</span><span class="nx">user1</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* re-renders every time */</span><span class="p">}</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">Child</span><span class="w"> </span><span class="na">user</span><span class="o">=</span><span class="p">{</span><span class="nx">user2</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* doesn't re-render */</span><span class="p">}</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="p">&lt;/&gt;</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="p">};</span>
+</span></code></pre></div>
+<h3 id="conclusion">✅ Conclusion</h3>
+<p>Use <code>useState</code> <strong>when...</strong></p>
+<ul>
+<li>You want <strong>React to manage the value</strong></li>
+<li>You need the value to <strong>persist across renders</strong></li>
+<li>You might <strong>change the value later</strong></li>
+<li>You want to avoid <strong>unnecessary re-renders</strong></li>
+</ul>
+<p>Use <code>const user = {}</code> <strong>when...</strong></p>
+<ul>
+<li>The value is <mark>static</mark> or <mark>local-only</mark></li>
+<li>You <mark>don’t need</mark> it to <strong>persist</strong></li>
+<li>It’s <strong>not passed to a memoized component</strong></li>
+</ul>
+<hr>
+<h2 id="question">Question</h2>
+<p>❓Is <code>React.memo</code> enough to prevent re-renders?</p>
+<p>✅ Only if the user <code>prop</code> stays the same by reference.</p>
+<hr>
+<h2 id="theory">Theory</h2>
+<p>Great question — the difference between passing <strong>primitive</strong> vs <strong>non-primitive props</strong> in React can have <mark>deep performance and rendering implications</mark>, and understanding it deeply is something that <em>only experienced developers usually grasp</em>.</p>
+<p>Let's break it down:</p>
+<hr>
+<h3 id="1-the-basics-primitive-vs-non-primitive">1. The Basics: Primitive vs Non-Primitive</h3>
+<ul>
+<li><strong>Primitive values</strong> (e.g., <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code>) are <mark>passed by value</mark>.</li>
+<li><strong>Non-primitive values</strong> (e.g., <code>object</code>, <code>array</code>, <code>function</code>) are <mark>passed by reference</mark>.</li>
+</ul>
+<p>In JavaScript:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// b references the same object</span>
+</span></code></pre></div>
+<hr>
+<h3 id="2-deep-insight-react-re-renders-and-props-comparison">2. Deep Insight: React Re-renders and Props Comparison</h3>
+<p>React re-renders a component <strong>when its props or state change</strong>. To check for changes, React does a <mark>shallow comparison</mark>.</p>
+<details class="example" open="open">
+<summary>Primitive Prop Example</summary>
+<div class="language-jsx highlight"><span class="filename">jsx</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">MyComponent</span><span class="w"> </span><span class="na">name</span><span class="o">=</span><span class="s">"Alice"</span><span class="w"> </span><span class="p">/&gt;</span>
+</span></code></pre></div>
+<p>Every time <code>name="Alice"</code> is passed, React checks:</p>
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">prevProps</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">nextProps</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="c1">// true if still "Alice"</span>
+</span></code></pre></div>
+<p>✅ No re-render unless the actual value changes.</p>
+</details>
+<details class="example" open="open">
+<summary>Non-Primitive Prop Example</summary>
+<div class="language-jsx highlight"><span class="filename">jsx</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">MyComponent</span><span class="w"> </span><span class="na">user</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">}}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span></code></pre></div>
+<p>Even if the object’s <strong>content is the same</strong>, the <mark>reference is new each render</mark>:</p>
+<div class="language-js highlight"><span class="filename">js</span><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nx">prevProps</span><span class="p">.</span><span class="nx">user</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">nextProps</span><span class="p">.</span><span class="nx">user</span><span class="w"> </span><span class="c1">// false (different references)</span>
+</span></code></pre></div>
+<p>❗ React will re-render <code>&lt;MyComponent /&gt;</code> even though <code>user.name</code> hasn’t changed!</p>
+</details>
+<hr>
+<h3 id="3-subtle-bugperformance-issue-that-few-people-understand">3. Subtle Bug/Performance Issue That Few People Understand</h3>
+<div class="language-js highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Parent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">Child</span><span class="w"> </span><span class="nx">user</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">}}</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Here, <code>user={{ name: "Alice" }}</code> is <mark>recreated</mark> every time <code>Parent</code> renders — so <code>Child</code> always receives a <strong>new object reference</strong> and re-renders.</p>
+<h4 id="hidden-cost">Hidden Cost:</h4>
+<p>If <code>Child</code> is expensive (e.g., contains animations, big lists, or heavy DOM), this causes <strong>unnecessary re-renders</strong>, hurting performance.</p>
+<p>Even <code>React.memo()</code> won’t help unless you stabilize the object:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nx">React</span><span class="p">.</span><span class="nx">memo</span><span class="p">(</span><span class="nx">Child</span><span class="p">);</span><span class="w"> </span><span class="c1">// still re-renders because props.user !== prevProps.user</span>
+</span></code></pre></div>
+<h4 id="solution-that-only-seasoned-devs-know">Solution That Only Seasoned Devs Know</h4>
+<p>Use <code>useMemo</code> or lift the object to avoid creating a new reference every render:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Parent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useMemo</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">}),</span><span class="w"> </span><span class="p">[]);</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">Child</span><span class="w"> </span><span class="nx">user</span><span class="o">=</span><span class="p">{</span><span class="nx">user</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">;</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Now <code>user</code> is the same reference unless something changes, and <code>React.memo</code> works as expected.</p>
+<hr>
+<h3 id="4-even-more-subtle-functions-as-props">4. Even More Subtle: Functions as Props</h3>
+<p>Passing <strong>inline functions</strong> behaves like non-primitives:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="o">&lt;</span><span class="nx">Child</span><span class="w"> </span><span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"clicked"</span><span class="p">)}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div>
+<p>This re-creates a <strong>new function</strong> every time — <code>Child</code> re-renders even if nothing changed.</p>
+<p>🧠 <mark>Pro devs know</mark> to memoize or lift handlers:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useCallback</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"clicked"</span><span class="p">),</span><span class="w"> </span><span class="p">[]);</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="o">&lt;</span><span class="nx">Child</span><span class="w"> </span><span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">;</span>
+</span></code></pre></div>
+<hr>
+<h3 id="summary-table">Summary Table</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Passed By</th>
+<th>Shallow Compare Works?</th>
+<th>Stable by Default?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>string</code></td>
+<td>value</td>
+<td>✅ Yes</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><code>number</code></td>
+<td>value</td>
+<td>✅ Yes</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><code>object</code></td>
+<td>reference</td>
+<td>❌ No</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><code>array</code></td>
+<td>reference</td>
+<td>❌ No</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><code>function</code></td>
+<td>reference</td>
+<td>❌ No</td>
+<td>❌ No</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="final-insight">Final Insight</h3>
+<p><strong>Understanding the difference in reference stability — and how it impacts memoization and renders — separates the intermediate from the expert React developers</strong>.</p>
+<hr>
+<h2 id="usememo">useMemo</h2>
 <details class="question" open="open">
-<summary>Is It Necessary to Pass Arguments in Order?</summary>
+<summary>When do you need useMemo?</summary>
+<p>Only when you're dealing with:</p>
 <ul>
-<li>
-<p><strong>Yes, it is necessary to follow the order</strong>:</p>
-<p>The parameters must be in the expected order if you plan to use them. If you do not use them as intended, you might not access the correct values.</p>
-</li>
+<li>Objects: <code>{ name: "Alice" }</code></li>
+<li>Arrays: <code>[1, 2, 3]</code></li>
+<li>Functions: <code>() =&gt; doSomething()</code></li>
 </ul>
+<p>Because those are passed by <strong>reference</strong>, and React would consider them <mark>changed every time</mark>, unless memoized.</p>
 </details>
-<details class="bug" open="open">
-<summary>What Happens If You Don’t Pass Parameters in Order?</summary>
-<ol>
-<li>
-<p><strong>Incorrect Values</strong>:</p>
-<p>If you mix up the parameters, you might end up accessing the wrong data. For example, treating <code>record</code> as <code>text</code> could lead to unexpected behavior.</p>
-</li>
-<li>
-<p><strong>Undefined Behavior</strong>:</p>
-<p>If you try to access properties or methods that don't exist on the wrongly assigned parameter, it could result in runtime errors.</p>
-</li>
-</ol>
-</details>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Example of Incorrect Order</label><label for="__tabbed_3_2">Using Only Required Parameters</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>If you try to change the order or omit certain parameters:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">'Name'</span><span class="p">,</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nx">dataIndex</span><span class="o">:</span><span class="w"> </span><span class="s1">'name'</span><span class="p">,</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">record</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Incorrect order</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">text</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span><span class="w"> </span><span class="c1">// This will not work as intended</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
-</span></code></pre></div>
-<ul>
-<li>In this case, <code>text</code> would receive the <code>record</code> value, leading to potential issues and incorrect output.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<p>If you only need some of the parameters, you can still choose to omit the ones you don’t need, but you should maintain the order:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">'Name'</span><span class="p">,</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nx">dataIndex</span><span class="o">:</span><span class="w"> </span><span class="s1">'name'</span><span class="p">,</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">text</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span><span class="w"> </span><span class="c1">// Only using text, omitting record and index</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<p><strong>Summary</strong></p>
-<ul>
-<li>The order of parameters in the <code>render</code> function is important and should be respected to avoid confusion and ensure that you access the correct data.</li>
-<li>You can omit parameters you don’t need, but the ones you do use must be in the correct order.</li>
-<li>Misordering parameters can lead to errors or unintended behavior, so always keep the defined order in mind when implementing the <code>render</code> function.</li>
-</ul>
-<hr>
-<h2 id="what-happens-if-we-only-use-record">What happens if we only use <code>record</code></h2>
-<p>If you use the <code>render</code> function in an Ant Design (antd) table like this:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">record</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">record</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">},</span>
-</span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked id="__tabbed_4_1" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">What Happens</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
-<ol>
-<li>
-<p><strong>Parameter Misuse</strong>:</p>
-<ul>
-<li>The <code>render</code> function is designed to take specific parameters, typically the first being <code>text</code>, which represents the value of the cell being rendered. The second is usually <code>record</code>, which represents the entire row of data.</li>
-</ul>
-</li>
-<li>
-<p><strong>Output</strong>:</p>
-<ul>
-<li>In this case, you are trying to directly use <code>record</code> as the only parameter. While this will technically work without throwing an error, you are not following the conventional parameter order. This means that the first parameter (the cell's value) is ignored, which could lead to confusion.</li>
-</ul>
-</li>
-<li>
-<p><strong>Accessing Data</strong>:</p>
-<ul>
-<li>If <code>record</code> contains a <code>name</code> property, the cell will correctly display the name from that row. For example, if <code>record</code> is:</li>
-</ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">'1'</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'John'</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"> </span><span class="nx">address</span><span class="o">:</span><span class="w"> </span><span class="s1">'New York'</span><span class="w"> </span><span class="p">}</span>
-</span></code></pre></div>
-<p>Then the output will be:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>John
-</span></code></pre></div>
-</li>
-</ol>
-<details class="success" open="open">
-<summary>Recommended Usage</summary>
-<p>While your implementation might work, it's better practice to adhere to the expected parameter order to avoid confusion and ensure clarity in your code. The standard usage would be:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">record</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">record</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">},</span>
-</span></code></pre></div>
-</details>
-<p><strong>Why It’s Important to Follow the Order</strong></p>
-<ol>
-<li>
-<p><strong>Readability</strong>: Following the conventional parameter order (i.e., <code>text</code>, <code>record</code>, <code>index</code>, <code>column</code>) makes the code easier to read and understand for others (or yourself in the future).</p>
-</li>
-<li>
-<p><strong>Consistency</strong>: It maintains consistency across your codebase, which is especially helpful in larger projects where multiple developers are involved.</p>
-</li>
-<li>
-<p><strong>Potential Errors</strong>: Although using just <code>record</code> won’t cause immediate errors, it could lead to issues if you later decide to rely on the first parameter (like <code>text</code>) for other rendering logic.</p>
-</li>
-</ol>
-<p><strong>Summary</strong></p>
-<p>Using just <code>record</code> in the <code>render</code> function will work as long as you access the properties correctly, <mark>but it's best practice to follow the expected parameter order</mark>. This approach enhances readability, consistency, and reduces the likelihood of confusion or errors in the future. If you have more questions or need further clarification, feel free to ask!</p>
-<hr>
-<h2 id="ignored-parameter">Ignored Parameter</h2>
-<p>If you don't need the <code>text</code> parameter in the <code>render</code> function, you can safely omit it by using an underscore (<code>_</code>) or just by using a single parameter (the one you need). Here’s how you can do it:</p>
-<p><strong>Using an Underscore to Indicate Ignored Parameter</strong></p>
-<p>You can indicate that you're intentionally ignoring the <code>text</code> parameter by using an underscore:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">record</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">record</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">},</span>
-</span></code></pre></div>
-<p><strong>Using Only the Necessary Parameter</strong></p>
-<p>Alternatively, if you prefer clarity and don’t want to include an unused parameter, you can just write:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">record</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">record</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">},</span>
-</span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked id="__tabbed_5_1" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">What Happens</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ol>
-<li>
-<p>No Errors: Both of these approaches will work without throwing any errors. The <code>record</code> parameter will provide access to the entire row of data, allowing you to retrieve the <code>name</code> property.</p>
-</li>
-<li>
-<p>Readability:</p>
-<ul>
-<li>Using an underscore makes it clear to anyone reading the code that you are intentionally ignoring the first parameter.</li>
-<li>Just using <code>record</code> could lead to confusion, as it deviates from the conventional order.</li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<details class="success" open="open">
-<summary>Best Practice</summary>
-<p>While it’s technically acceptable to use just <code>record</code>, the most conventional approach is to include the <code>text</code> parameter and <mark>use an underscore</mark> or simply acknowledge that you won't be using it. This maintains consistency with the expected signature of the <code>render</code> function:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">record</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;{</span><span class="nx">record</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">span</span><span class="p">&gt;;</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">},</span>
-</span></code></pre></div>
-</details>
-<p><strong>Summary</strong></p>
-<p>You can ignore the <code>text</code> parameter in the <code>render</code> function if you don’t need it. Using an underscore (<code>_</code>) is a common practice to indicate that you are intentionally ignoring that parameter, promoting code readability and maintaining conventional coding standards. If you have further questions or need more details, feel free to ask!</p></div>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>useMemo Needed?</th>
+<th>Why?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>string</code></td>
+<td>❌ No</td>
+<td>Primitives are stable</td>
+</tr>
+<tr>
+<td><code>number</code></td>
+<td>❌ No</td>
+<td>Passed by value</td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td>❌ No</td>
+<td>Shallow compare works fine</td>
+</tr>
+<tr>
+<td><code>object</code></td>
+<td>✅ Yes</td>
+<td>New reference every render</td>
+</tr>
+<tr>
+<td><code>array</code></td>
+<td>✅ Yes</td>
+<td>New reference every render</td>
+</tr>
+<tr>
+<td><code>function</code></td>
+<td>✅ Yes (<code>useCallback</code>)</td>
+<td>New reference every render</td>
+</tr>
+</tbody>
+</table></div>
 
 
 
@@ -10280,7 +10544,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../controlled-components/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Controlled Component">
+          <a href="../business-logic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Business Logic Separation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -10290,20 +10554,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Controlled Component
+                Business Logic Separation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../twoTone-color/" class="md-footer__link md-footer__link--next" aria-label="Next: twoTone icon">
+          <a href="../folder-structure/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                twoTone icon
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -10343,10 +10607,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.top", "navigation.tabs.sticky", "navigation.tabs", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "navigation.tabs.sticky", "navigation.tabs", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
