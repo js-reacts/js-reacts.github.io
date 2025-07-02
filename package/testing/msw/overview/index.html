@@ -8915,6 +8915,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#key-differences-between-v1-and-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✳️ Key Differences Between v1 and v2
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8937,6 +8946,147 @@
   
   <span class="md-ellipsis">
     Advanced
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mock-api-listing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MOCK API LISTING
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../msw-file-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    msw file structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_5_2" id="__nav_8_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mutex
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mutex
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mutex/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mutex/mutex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mutex
     
   </span>
   
@@ -9985,6 +10135,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#key-differences-between-v1-and-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✳️ Key Differences Between v1 and v2
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10067,7 +10226,50 @@
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">// If you want to check specific sections:</span>
 </span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">msw</span><span class="p">.</span><span class="nx">rest</span><span class="p">));</span><span class="w"> </span><span class="c1">// REST methods</span>
 </span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">msw</span><span class="p">.</span><span class="nx">graphql</span><span class="p">));</span><span class="w"> </span><span class="c1">// GraphQL methods</span>
-</span></code></pre></div></div>
+</span></code></pre></div>
+<hr>
+<h2 id="key-differences-between-v1-and-v2">✳️ Key Differences Between v1 and v2</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>MSW v1</th>
+<th>MSW v2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API style</td>
+<td><code>rest.get</code>, <code>graphql.query</code></td>
+<td><code>http.get</code>, <code>HttpResponse.json</code></td>
+</tr>
+<tr>
+<td>Response builder</td>
+<td><code>ctx.status</code>, <code>ctx.json</code></td>
+<td><code>HttpResponse</code> class</td>
+</tr>
+<tr>
+<td>Dynamic matching</td>
+<td>Partial (regex/path params)</td>
+<td>Full request predicate functions</td>
+</tr>
+<tr>
+<td>Streaming support</td>
+<td>❌ Not built-in</td>
+<td>✅ (via <code>HttpResponse.stream</code>)</td>
+</tr>
+<tr>
+<td>Request inspection</td>
+<td>✅ <code>req</code> object</td>
+<td>✅ with better type inference</td>
+</tr>
+<tr>
+<td>Stability</td>
+<td>✅ Stable</td>
+<td>⚠️ RC/Beta</td>
+</tr>
+</tbody>
+</table></div>
 
 
 
