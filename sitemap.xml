@@ -213,6 +213,14 @@
          <lastmod>2025-07-03</lastmod>
     </url>
     <url>
+         <loc>https://js-reacts.github.io/logic/logic-business/</loc>
+         <lastmod>2025-07-03</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/logic/logic-ui/</loc>
+         <lastmod>2025-07-03</lastmod>
+    </url>
+    <url>
          <loc>https://js-reacts.github.io/logic/overview/</loc>
          <lastmod>2025-07-03</lastmod>
     </url>
@@ -313,6 +321,14 @@
          <lastmod>2025-07-03</lastmod>
     </url>
     <url>
+         <loc>https://js-reacts.github.io/package/testing/faker-js/overview/</loc>
+         <lastmod>2025-07-03</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/package/testing/faker-js/usage/</loc>
+         <lastmod>2025-07-03</lastmod>
+    </url>
+    <url>
          <loc>https://js-reacts.github.io/package/testing/msw/mock-api-listing/</loc>
          <lastmod>2025-07-03</lastmod>
     </url>
@@ -326,6 +342,10 @@
     </url>
     <url>
          <loc>https://js-reacts.github.io/package/testing/msw/overview/</loc>
+         <lastmod>2025-07-03</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/package/testing/msw/post-endpoints/</loc>
          <lastmod>2025-07-03</lastmod>
     </url>
     <url>
