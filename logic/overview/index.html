@@ -16,7 +16,7 @@
         <link rel="prev" href="../../pattern/misc/">
       
       
-        <link rel="next" href="../../naming/overview/">
+        <link rel="next" href="../example/">
       
       
       <link rel="icon" href="../../assets/logo/react.ico">
@@ -7207,6 +7207,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#categories-of-logic-in-a-scalable-react-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Categories of Logic in a Scalable React App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-example-breakdown-from-a-facebook-style-post-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 Real Example Breakdown (from a Facebook-style "Post Creator")
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-big-tech-teams-structure-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 How Big Tech Teams Structure This
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Why This Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#my-blog" class="md-nav__link">
     <span class="md-ellipsis">
       My Blog
@@ -7219,6 +7264,52 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bank-domain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Domain
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -10146,6 +10237,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#categories-of-logic-in-a-scalable-react-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Categories of Logic in a Scalable React App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-example-breakdown-from-a-facebook-style-post-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 Real Example Breakdown (from a Facebook-style "Post Creator")
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-big-tech-teams-structure-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 How Big Tech Teams Structure This
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Why This Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#my-blog" class="md-nav__link">
     <span class="md-ellipsis">
       My Blog
@@ -10171,6 +10307,217 @@
 
 
 <div><h1 id="overview">Overview</h1>
+<p>In large, real-world applications (like those at Google, Facebook, or enterprise teams), developers separate much more than just UI logic and business logic. Here's a full breakdown of the different types of logic and code concerns that experienced engineers typically isolate.</p>
+<h2 id="categories-of-logic-in-a-scalable-react-app">🧠 Categories of Logic in a Scalable React App</h2>
+<table>
+<thead>
+<tr>
+<th>Logic Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ <strong>UI Logic</strong></td>
+<td>Rendering, component structure, styles, layout</td>
+</tr>
+<tr>
+<td>✅ <strong>Business Logic</strong></td>
+<td>App rules, form workflows, permissions, what should happen</td>
+</tr>
+<tr>
+<td>📡 <strong>Data Logic</strong></td>
+<td>API requests, caching, normalization, RTK Query or React Query</td>
+</tr>
+<tr>
+<td>📦 <strong>State Management Logic</strong></td>
+<td>Global or shared state (e.g., Redux, Zustand, context)</td>
+</tr>
+<tr>
+<td>🔐 <strong>Auth/Access Logic</strong></td>
+<td>What users can see/do, roles, feature flags</td>
+</tr>
+<tr>
+<td>🧪 <strong>Validation Logic</strong></td>
+<td>Form field validation, custom rules, conditional validation</td>
+</tr>
+<tr>
+<td>🧰 <strong>Utility Logic</strong></td>
+<td>Date formatting, string manipulation, calculations</td>
+</tr>
+<tr>
+<td>🔄 <strong>Side-Effect Logic</strong></td>
+<td>Effects like <code>useEffect</code>, subscriptions, timers, scroll events</td>
+</tr>
+<tr>
+<td>🧩 <strong>Integration Logic</strong></td>
+<td>Working with SDKs, analytics, 3rd party services (Stripe, Firebase)</td>
+</tr>
+<tr>
+<td>🚦 <strong>Workflow/State Machine Logic</strong></td>
+<td>Multi-step forms, wizards, conditional flows</td>
+</tr>
+<tr>
+<td>📑 <strong>Content/Copy Logic</strong></td>
+<td>Dynamic labels, localization, pluralization (i18n)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="real-example-breakdown-from-a-facebook-style-post-creator">🏗 Real Example Breakdown (from a Facebook-style "Post Creator")</h2>
+<p>Imagine a huge component like this:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&lt;</span><span class="nx">PostForm</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div>
+<p>It might contain all this:</p>
+<table>
+<thead>
+<tr>
+<th>Logic Concern</th>
+<th>Example</th>
+<th>Where It Belongs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI Logic</td>
+<td><code>&lt;TextArea /&gt;</code>, buttons, error display</td>
+<td><code>PostForm.jsx</code></td>
+</tr>
+<tr>
+<td>Business Logic</td>
+<td>"User must be verified" check</td>
+<td><code>usePostForm.js</code></td>
+</tr>
+<tr>
+<td>Data Logic</td>
+<td><code>createPost()</code> mutation</td>
+<td><code>postApi.js</code> (RTK Query or fetch)</td>
+</tr>
+<tr>
+<td>Validation Logic</td>
+<td>Check character count, tag limit</td>
+<td><code>formValidation.js</code></td>
+</tr>
+<tr>
+<td>Auth Logic</td>
+<td>Hide certain fields for banned users</td>
+<td><code>authContext.js</code> or <code>authUtils.js</code></td>
+</tr>
+<tr>
+<td>Utility Logic</td>
+<td>Format hashtags, strip HTML</td>
+<td><code>utils/formatPost.js</code></td>
+</tr>
+<tr>
+<td>Side Effects</td>
+<td><code>useEffect</code> to fetch drafts on load</td>
+<td><code>usePostForm.js</code></td>
+</tr>
+<tr>
+<td>Global State</td>
+<td>Redux: is user premium?</td>
+<td><code>userSlice.js</code></td>
+</tr>
+<tr>
+<td>i18n/Copy</td>
+<td>"What's on your mind?" label</td>
+<td><code>i18n/messages.js</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="how-big-tech-teams-structure-this">🧱 How Big Tech Teams Structure This</h2>
+<p>A simplified directory structure inspired by Google or Meta:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/components
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>/PostForm
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span>PostForm.jsx<span class="w">               </span>←<span class="w"> </span>UI<span class="w"> </span>logic
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span>usePostForm.js<span class="w">             </span>←<span class="w"> </span>business<span class="w"> </span>logic<span class="w"> </span>+<span class="w"> </span>side<span class="w"> </span>effects
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span>PostValidation.js<span class="w">          </span>←<span class="w"> </span>validation<span class="w"> </span>logic
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span>PostUtils.js<span class="w">               </span>←<span class="w"> </span>utility<span class="w"> </span>logic
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>/services
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span>postApi.js<span class="w">                   </span>←<span class="w"> </span>RTK<span class="w"> </span>Query<span class="w"> </span>/<span class="w"> </span>API<span class="w"> </span>logic
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>/store
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span>userSlice.js<span class="w">                 </span>←<span class="w"> </span>global<span class="w"> </span>user<span class="w"> </span>state
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>/auth
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span>authUtils.js<span class="w">                 </span>←<span class="w"> </span>permission<span class="w"> </span>logic
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>/i18n
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span>postForm.en.json<span class="w">             </span>←<span class="w"> </span>labels<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>copy
+</span></code></pre></div>
+<h2 id="why-this-matters">🚀 Why This Matters</h2>
+<ul>
+<li><strong>🔍 Debug Faster</strong> — You know where to look: bug in API? In formatting? In validation?</li>
+<li><strong>👥 Team Collaboration</strong> — Frontend, backend, design, and QA can work in parallel</li>
+<li><strong>🧪 Test Logic Separately</strong> — You can write unit tests for each part</li>
+<li><strong>🔄 Swap Implementations</strong> — Change API, UI library, or state logic without full rewrites</li>
+<li><strong>📏 Consistency</strong> — Every engineer follows the same architecture</li>
+</ul>
+<hr>
+<h2 id="tldr">✅ TL;DR</h2>
+<table>
+<thead>
+<tr>
+<th>You Already Knew...</th>
+<th>But Also Consider...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI vs Business Logic ✅</td>
+<td>✅ API logic (RTK, React Query)</td>
+</tr>
+<tr>
+<td></td>
+<td>✅ Auth, validation, effects</td>
+</tr>
+<tr>
+<td></td>
+<td>✅ Utilities, i18n, state machines</td>
+</tr>
+<tr>
+<td></td>
+<td>✅ Feature toggles, workflows</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Yes, UI logic and business logic are very different, especially in real-world large-scale codebases like Google, Facebook (Meta), Amazon, or any serious enterprise React application.</p>
+<p>🧠 Difference: UI Logic vs. Business Logic</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>UI Logic</th>
+<th>Business Logic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>Controls how things look &amp; behave visually</td>
+<td>Controls how data flows, rules, and app behavior</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td>Show a spinner while loading</td>
+<td>Fetch a user, calculate permissions, validate state</td>
+</tr>
+<tr>
+<td><strong>Lives In</strong></td>
+<td>React components</td>
+<td>Custom hooks, service layers, Redux slice, etc.</td>
+</tr>
+<tr>
+<td><strong>Changes</strong></td>
+<td>Often on UI tweaks (e.g. redesign)</td>
+<td>Often on product logic changes (e.g. pricing rules)</td>
+</tr>
+<tr>
+<td><strong>Who Touches It</strong></td>
+<td>Frontend developers, designers</td>
+<td>Frontend/backend/full-stack engineers</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="my-blog">My Blog</h2>
 <ul>
@@ -10229,13 +10576,13 @@
         
         
           
-          <a href="../../naming/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+          <a href="../example/" class="md-footer__link md-footer__link--next" aria-label="Next: Example">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Overview
+                Example
               </div>
             </div>
             <div class="md-footer__button md-icon">
