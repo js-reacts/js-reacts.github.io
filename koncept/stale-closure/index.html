@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://js-reacts.github.io/hooks/useReducer/">
+        <link rel="canonical" href="https://js-reacts.github.io/koncept/stale-closure/">
       
       
-        <link rel="prev" href="../../state-management/jwt-verification-clientside/">
+        <link rel="prev" href="../functional-vs-direct-update/">
       
       
-        <link rel="next" href="../useReducer-and-reducer/">
+        <link rel="next" href="../others/">
       
       
       <link rel="icon" href="../../assets/logo/react.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>useReducer - React Organization</title>
+        <title>Stale Closure - React Organization</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#stale-closure" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              useReducer
+              Stale Closure
             
           </span>
         </div>
@@ -319,13 +319,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../hooks/guides/" class="md-tabs__link">
           
   
   
@@ -410,6 +408,28 @@
   
   
   Package
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  Koncept
 
         </a>
       </li>
@@ -6339,29 +6359,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -6374,7 +6389,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Hooks
@@ -6385,251 +6400,15 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    useReducer
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    useReducer
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-usereducer" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is useReducer?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-does-it-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does it work?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explain-to-5-years-old" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explain to 5 years old
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question 1
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question 2
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../useReducer-and-reducer/" class="md-nav__link">
+      <a href="../../hooks/guides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    useReducer & Reducer
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../useReducer-example/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    useReducer Example
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../useReducer-with-api/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    useReducer with API
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../React.memo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    React.memo
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../React.memo-syntax/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    React.memo Syntax
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../React.memo-vs-useMemo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    React.memo vs useMemo
+    Guide
     
   </span>
   
@@ -6658,15 +6437,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_6_8" id="__nav_6_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Memo
+    useCallback
     
   </span>
   
@@ -6674,10 +6453,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
-            Memo
+            useCallback
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6688,12 +6467,553 @@
   
   
     <li class="md-nav__item">
-      <a href="../memo/overview/" class="md-nav__link">
+      <a href="../../hooks/useCallback/overview/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useCallback/useCallback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useCallback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useCallback/example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useCallback/function-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function creation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    useRef
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            useRef
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useRef/useRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    useEffect
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            useEffect
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useEffect/useEffect-technique/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useEffect Technique
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useEffect/useEffect-technique-used/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useEffect mostly used
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useEffect/useEffect-cleanup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useEffect cleanup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    useReducer
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            useReducer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer/useReducer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useReducer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer/useReducer-and-reducer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useReducer & Reducer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer/useReducer-example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useReducer Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer/useReducer-with-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    useReducer with API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    React.memo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            React.memo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/memo/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/memo/React.memo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    React.memo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/memo/React.memo-syntax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    React.memo Syntax
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/memo/React.memo-vs-useMemo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    React.memo vs useMemo
     
   </span>
   
@@ -6719,145 +7039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Guide
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../useEffect-technique/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    useEffect Technique
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../useEffect-technique-used/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    useEffect mostly used
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../useEffect-cleanup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    useEffect cleanup
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../useCallback/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    useCallback
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../useRef/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    useRef
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../react-context-api/" class="md-nav__link">
+      <a href="../../hooks/react-context-api/" class="md-nav__link">
         
   
   
@@ -6880,7 +7062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-router/" class="md-nav__link">
+      <a href="../../hooks/react-router/" class="md-nav__link">
         
   
   
@@ -6903,7 +7085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../migrating-cra-vite/" class="md-nav__link">
+      <a href="../../hooks/migrating-cra-vite/" class="md-nav__link">
         
   
   
@@ -6937,10 +7119,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_18" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_10" >
         
           
-          <label class="md-nav__link" for="__nav_6_18" id="__nav_6_18_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_10" id="__nav_6_10_label" tabindex="0">
             
   
   
@@ -6953,8 +7135,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_18_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_18">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_10">
             <span class="md-nav__icon md-icon"></span>
             CUSTOM
           </label>
@@ -6967,7 +7149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom/overview/" class="md-nav__link">
+      <a href="../../hooks/custom/overview/" class="md-nav__link">
         
   
   
@@ -10629,6 +10811,266 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Koncept
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Koncept
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice Quiz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shallow-comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Shallow Comparison
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional-vs-direct-update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function vs Direct Update
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Stale Closure
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stale Closure
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-stale-closure" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 What is a Stale Closure?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stale-closures-cause-bugs-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stale Closures Cause Bugs In:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ General Fixes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../others/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -10646,6 +11088,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -10654,60 +11098,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#what-is-a-stale-closure" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-usereducer" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is useReducer?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-does-it-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does it work?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explain-to-5-years-old" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explain to 5 years old
+      🔍 What is a Stale Closure?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#question-1" class="md-nav__link">
+  <a href="#stale-closures-cause-bugs-in" class="md-nav__link">
     <span class="md-ellipsis">
-      Question 1
+      Stale Closures Cause Bugs In:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#question-2" class="md-nav__link">
+  <a href="#general-fixes" class="md-nav__link">
     <span class="md-ellipsis">
-      Question 2
+      ✅ General Fixes
     </span>
   </a>
   
@@ -10729,148 +11140,71 @@
 
 
 
-  <h1>useReducer</h1>
-
-<div><p><code>useReducer</code> is a React Hook that is used to manage complex state logic in functional components. It is an <mark>alternative to</mark> <code>useState</code>, providing more control over state updates and handling complex state transitions more cleanly.</p>
-<h2 id="overview">Overview</h2>
-<h3 id="what-is-usereducer">What is <code>useReducer</code>?</h3>
-<p><code>useReducer</code> is a Hook that helps manage state in a React component by providing a way to handle complex state logic. It works similarly to a reducer function in Redux, where you define how your state updates in response to various actions.</p>
-<h3 id="how-does-it-work">How does it work?</h3>
-<p><code>useReducer</code> takes two arguments:</p>
-<ol>
-<li>
-<p><strong>Reducer Function</strong>: A function that determines how the state changes based on the action dispatched. It takes the current state and an action object, then returns the new state.</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">reducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'INCREMENT'</span><span class="o">:</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'DECREMENT'</span><span class="o">:</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">count</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">();</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>Initial State</strong>: The initial state of your component.</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">initialState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="p">};</span>
-</span></code></pre></div>
-</li>
-</ol>
-<p>The <code>useReducer</code> hook returns an array with two elements:</p>
-<ol>
-<li><strong>Current State</strong>: The current state of your component.</li>
-<li>
-<p><strong>Dispatch Function</strong>: A function that you call with an action to trigger a state update.</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">(</span><span class="nx">reducer</span><span class="p">,</span><span class="w"> </span><span class="nx">initialState</span><span class="p">);</span>
-</span></code></pre></div>
-</li>
-</ol>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Why do we need useReducer?</label><label for="__tabbed_1_2">When to use useReducer?</label><label for="__tabbed_1_3">What problem does it solve?</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><code>useReducer</code> is useful when:</p>
-<ol>
-<li>
-<p><strong>Complex State Logic</strong>: If you have a component with complex state transitions, <code>useReducer</code> can make it easier to manage compared to multiple <code>useState</code> calls. It centralizes the state logic in one place.</p>
-</li>
-<li>
-<p><strong>Multiple State Variables</strong>: When you have multiple related state variables that need to be updated together, <code>useReducer</code> helps manage them more coherently.</p>
-</li>
-<li>
-<p><strong>Predictable State Updates</strong>: It enforces a clear pattern for how state updates occur, which can improve maintainability and debugability.</p>
-</li>
-<li>
-<p><strong>State Transitions Based on Actions</strong>: If your state updates based on specific actions (like in a Redux-like setup), <code>useReducer</code> aligns well with this pattern.</p>
-</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>When state updates are dependent on complex logic or multiple actions.</li>
-<li>When the state is an object and you need to update specific fields.</li>
-<li>When you want to centralize state management and make it easier to trace how state changes.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><strong>Complex State Logic</strong>: Simplifies and organizes state transitions, making the component easier to understand and maintain.</li>
-<li><strong>Centralized State Management</strong>: Provides a single location (the reducer function) for handling all state updates, which can be easier to manage than scattering state logic across multiple <code>useState</code> calls.</li>
-<li><strong>Predictable Updates</strong>: Ensures that state updates are predictable and consistent, improving the reliability of the component.</li>
-</ul>
-</div>
-</div>
-</div>
+<div><h1 id="stale-closure">Stale Closure</h1>
+<p>Understanding stale closures is key to avoiding some really sneaky bugs in React (especially with <code>useEffect</code>, <code>timers</code>, and <code>event handlers</code>).</p>
+<h2 id="what-is-a-stale-closure">🔍 What is a Stale Closure?</h2>
+<p>A stale closure happens when a function "remembers" an <strong>old version</strong> <mark>of variables</mark> (like <code>state</code> or <code>props</code>) because it was created during an earlier render.</p>
+<p><strong>In simple terms:</strong></p>
+<blockquote>
+<p>A function you write inside a component doesn't always get "updated" with the latest state unless you write it the right way.</p>
+</blockquote>
 <hr>
-<h2 id="explain-to-5-years-old">Explain to 5 years old</h2>
-<h2 id="question-1">Question 1</h2>
-<div class="admonition question">
-<p class="admonition-title">explain useReducer to 5 years old</p>
-</div>
-<p>Okay! Let's imagine you have a toy that needs to be fixed or changed in different ways. We’ll use a simple story to explain useReducer.</p>
-<p><strong>The Toy Box</strong></p>
-<ol>
-<li>
-<p>Your Toy Box: Imagine you have a toy box where you keep your toys. This toy box can look different depending on how you play with it. Sometimes you want to put toys in, sometimes you want to take toys out, or maybe you want to tidy it up.</p>
-</li>
-<li>
-<p>Toy Fixer: You have a special toy fixer who knows exactly how to make changes to your toy box. This toy fixer listens to what you want and then decides how to change the toy box.</p>
-</li>
-</ol>
-<p><strong>How It Works:</strong></p>
-<ol>
-<li>
-<p>What You Want: When you tell the toy fixer what you want (like putting in a new toy or taking one out), you’re giving it a “message” or “action.” For example, you might say, “Put a teddy bear in the box” or “Take out the truck.”</p>
-</li>
-<li>
-<p>Fixing the Toy Box: The toy fixer reads your message and knows exactly how to change the toy box. It uses a set of rules to make the changes, like if you say “Add a teddy bear,” it puts the teddy bear in the box.</p>
-</li>
-<li>
-<p>New Look: After the toy fixer does its job, the toy box looks different, with the teddy bear now inside or the truck taken out.</p>
-</li>
-</ol>
-<p><strong>In Simple Steps:</strong></p>
-<ol>
-<li>Tell What You Want: You give a message to the toy fixer (like “Add a toy”).</li>
-<li>Toy Fixer Makes Changes: The toy fixer reads the message and changes the toy box accordingly.</li>
-<li>New Toy Box: Now your toy box looks just the way you wanted it!</li>
-</ol>
-<p>In code, <code>useReducer</code> <mark>is like that toy fixer</mark>. It helps us manage changes to our “toy box” (which is our state) by following rules and handling messages (actions) to update things correctly.</p>
+<h2 id="stale-closures-cause-bugs-in">Stale Closures Cause Bugs In:</h2>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Risk of Stale State?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>setTimeout</code> / <code>setInterval</code></td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Event listeners (<code>addEventListener</code>)</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Async functions (<code>fetch</code>, Promises)</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Callback props to children</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>useMemo / useCallback usage</td>
+<td>✅ Yes, if deps wrong</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h2 id="question-2">Question 2</h2>
-<div class="admonition question">
-<p class="admonition-title">now explain to 5 years old, when to use useState and useReducer.</p>
-</div>
-<p>Sure! Let’s think about <code>useState</code> and <code>useReducer</code> using simple toys and games.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">useState</label><label for="__tabbed_2_2">useReducer</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Imagine you have a box of crayons, and you only have a few crayons. You want to keep track of how many crayons you have, and it’s pretty easy because you don’t have too many.</p>
-<ol>
-<li><strong>Counting Crayons</strong>: When you want to know how many crayons you have, you just look in the box.</li>
-<li><strong>Adding Crayons</strong>: If you get a new crayon, you just add it to the box.</li>
-<li><strong>Simple and Easy</strong>: It’s easy to keep track because you only have a few crayons and it’s not complicated.</li>
-</ol>
-<p><strong>When to use <code>useState</code></strong>: You use useState when you have something simple, like counting your crayons. It’s easy and quick to manage because you don’t have too many things to keep track of.</p>
-</div>
-<div class="tabbed-block">
-<p>Now, let’s say you have a big toy box with lots of different toys. Some toys need to be fixed, some need to be put away, and some need to be cleaned. It’s more complicated because you have different kinds of toys and many actions to handle.</p>
-<ol>
-<li><strong>Different Actions</strong>: You might want to put toys away, fix broken ones, or organize them in different ways.</li>
-<li><strong>Toy Fixer</strong>: You need a special toy fixer who knows all the rules for changing the toy box, like how to handle each type of toy and what to do with them.</li>
-<li><strong>More Organized</strong>: The toy fixer follows a set of rules to make sure everything is handled correctly, and your toy box stays organized even though it’s more complicated.</li>
-</ol>
-<p><strong>When to use <code>useReducer</code></strong>: You use <code>useReducer</code> when you have a big toy box with lots of different toys and many things to manage. It helps you keep everything organized by following rules and handling different actions in a structured way.</p>
-</div>
-</div>
-</div>
-<p><strong>Summary</strong></p>
-<ul>
-<li><code>useState</code> is like counting crayons in a simple way. It’s easy and works well when you don’t have a lot to manage.</li>
-<li><code>useReducer</code> is like having a toy fixer for a big toy box with many different toys and actions. It helps manage everything in a more organized way when things get more complicated.</li>
-</ul>
-<p>So, if you’re just keeping track of a few things, use <code>useState</code>. If you have a lot of things and need to handle them in different ways, use <code>useReducer</code>.</p></div>
+<h2 id="general-fixes">✅ General Fixes</h2>
+<table>
+<thead>
+<tr>
+<th>Fix</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Functional updates</td>
+<td>State depends on previous (<code>setState(prev =&gt; ...)</code>)</td>
+</tr>
+<tr>
+<td><code>useRef</code></td>
+<td>Track latest values across time/async boundaries</td>
+</tr>
+<tr>
+<td>Correct dependency arrays</td>
+<td>For <code>useEffect</code>, <code>useCallback</code>, etc.</td>
+</tr>
+</tbody>
+</table>
+<hr></div>
 
 
 
@@ -10906,7 +11240,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../state-management/jwt-verification-clientside/" class="md-footer__link md-footer__link--prev" aria-label="Previous: JWT Client Side">
+          <a href="../functional-vs-direct-update/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Function vs Direct Update">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -10916,20 +11250,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                JWT Client Side
+                Function vs Direct Update
               </div>
             </div>
           </a>
         
         
           
-          <a href="../useReducer-and-reducer/" class="md-footer__link md-footer__link--next" aria-label="Next: useReducer &amp; Reducer">
+          <a href="../others/" class="md-footer__link md-footer__link--next" aria-label="Next: Misc">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                useReducer & Reducer
+                Misc
               </div>
             </div>
             <div class="md-footer__button md-icon">
