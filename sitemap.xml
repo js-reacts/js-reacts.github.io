@@ -1125,15 +1125,7 @@
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/5-ways-to-call-rtkquery-api/</loc>
-         <lastmod>2025-08-16</lastmod>
-    </url>
-    <url>
          <loc>https://js-reacts.github.io/state-management/rtkquery/best-approach-rtk/</loc>
-         <lastmod>2025-08-16</lastmod>
-    </url>
-    <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/cheatsheet/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
@@ -1145,35 +1137,59 @@
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/rtk-lazy-query/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/advanced/enhanceEndpoints/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/rtk-optimistic-mutation/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/advanced/injectEndpoints/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/rtk-post-put-mutation/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/advanced/theory/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/rtk-query-header/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/auth/overview/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/rtk-query-hooks/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/auth/structure/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/rtk-transform/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/5-ways-to-call-rtkquery-api/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/rtk-vs-tanstack/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/cheatsheet/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
-         <loc>https://js-reacts.github.io/state-management/rtkquery/advanced/injecting-endpoints/</loc>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/rtk-lazy-query/</loc>
+         <lastmod>2025-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/rtk-optimistic-mutation/</loc>
+         <lastmod>2025-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/rtk-post-put-mutation/</loc>
+         <lastmod>2025-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/rtk-query-header/</loc>
+         <lastmod>2025-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/rtk-query-hooks/</loc>
+         <lastmod>2025-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/rtk-transform/</loc>
+         <lastmod>2025-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://js-reacts.github.io/state-management/rtkquery/basic/rtk-vs-tanstack/</loc>
          <lastmod>2025-08-16</lastmod>
     </url>
     <url>
